@@ -15,7 +15,14 @@ from keras.models import load_model
 
 lemmatizer = WordNetLemmatizer()
 intents = json.loads(open('intents_spanish.json', 'r', encoding='utf-8').read())
-
+try:
+    with open('words.pkl', 'rb') as file:
+        words = pickle.load(file)
+    print("Archivo words.pkl cargado correctamente.")
+except FileNotFoundError:
+    print("El archivo words.pkl no se encuentra.")
+except Exception as e:
+    print(f"Ocurrió un error al cargar el archivo words.pkl: {e}")
 words = pickle.load(open('words.pkl', 'rb'))
 classes = pickle.load(open('classes.pkl','rb'))
 model= load_model('chatbot_model.h5')
