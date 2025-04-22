@@ -7,11 +7,18 @@ try:
     nltk.data.find('tokenizers/punkt')
 except LookupError:
     nltk.download('punkt')
+
     from nltk.stem import WordNetLemmatizer
 from keras.models import load_model
 
-
-
+try:
+    with open('words.pkl', 'rb') as file:
+        words = pickle.load(file)
+    print("Archivo words.pkl cargado correctamente.")
+except FileNotFoundError:
+    print("El archivo words.pkl no se encuentra.")
+except Exception as e:
+    print(f"Ocurrió un error al cargar el archivo words.pkl: {e}")
 
 lemmatizer = WordNetLemmatizer()
 intents = json.loads(open('intents_spanish.json', 'r', encoding='utf-8').read())
