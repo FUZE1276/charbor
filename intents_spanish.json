@@ -1,0 +1,1515 @@
+{
+  "intents": [
+    {
+      "tag": "saludo",
+      "patterns": ["Hola", "Buenos días", "como vas?", "soy yo de nuevo", "buen día"],
+      "responses": ["Hola 👋 ,¿en qué puedo ayudarte?", "Hola, ¿cómo estás? 😃", "Un gusto saludarte de nuevo, dime ¿en qué te puedo colaborar? 😃"]
+    },{
+      "tag": "Bien",
+      "patterns": ["Estoy bien","Bien gracias","Bien gracias a Dios"],
+      "responses": ["Me alegra oir eso! Ahora bien dime en que te ayudo? 🚀😃", "Que bien! cuentame en que te puedo colaborar? 🚀😃"]
+    },{
+      "tag": "pregunta",
+      "patterns": ["Es que queria preguntarte algo", "Tenia una pregunta","como estas","Es que tengo una duda","tenia una pequeña pregunta"],
+      "responses": ["Claro! dime cual es tu pregunta o duda para ayudarte!"]
+    },
+    {
+      "tag": "comotai",
+      "patterns": ["Como estas?", "Como te encuentas?","como estas","Como te encuentras"],
+      "responses": ["Bien! Estoy ansioso de poder ayudarte 😃", "Super! Dime como te colaboro? 😃"]
+    },
+    {
+      "tag": "nombre",
+      "patterns": ["como es tu nombre", "como te llamas"],
+      "responses": ["Me llamo Alex, ¿y tú?", "Soy Alex, un placer saludarte"]
+    },
+    {
+      "tag": "Gracias",
+      "patterns": ["gracias","muchisimas gracias","wow gracias","wow eres increible"],
+      "responses": ["Un placer ayudarte, para eso estoy aqui 🚀😃","Me alegro haberte podido ayudar 😃"]
+    },{
+      "tag": "provedor_empanadas_nombre",
+      "patterns":["Cual es el nombre de nuestro proveedor de empanadas","Como se llama el que nos provee la empanada Argentina","¿Cómo se llama el proveedor de empanadas?","¿Quién nos vende las empanadas?","¿De dónde vienen nuestras empanadas?","¿Quién es nuestro proveedor oficial de empanadas?","¿Cómo se llama el que nos provee la empanada argentina?","¿Cómo se llama el que nos provee la empanada de pollo?","¿Cómo se llama el que nos provee la empanada de jamon y queso?","¿Cómo se llama el que nos vende palitos de queso?","quien es el proveedor del pastel de pollo","Como se llama el que nos vende el pastel de carne","Quien nos provee nuestro pastel de bocadillo","Quien es nuestro proveedor de nuestro coissant de almendras"],
+      "responses":[" Nuestro proveedor de ese producto es la Panadería Ricotti 🍮"]
+    },{
+      "tag": "provedor_empanadas_email",
+      "patterns":["Cual es el email de nuestro proveedor de empanadas","Como es el email de el que nos provee la empanada Argentina","¿Cómo es el email el proveedor de empanadas?","¿Dame el email de quién nos vende las empanadas","¿Dame el email de el que nos facilita nuestras empanadas?","¿Dame el email de quién es nuestro proveedor oficial de empanadas?","¿Cómo es el email el que nos provee la empanada argentina?","¿Cómo es el email de el que nos provee la empanada de pollo?","¿Cómo sale el email el que nos provee la empanada de jamon y queso?","¿Cómo sale el email de el que nos vende palitos de queso?","Dame el email de quien es el proveedor del pastel de pollo","EL email de el que nos surte el pastel de carne cual es?","dame el email de quien nos provee nuestro pastel de bocadillo","Sabes el email de nuestro proveedor de el coissant de almendras"],
+      "responses":["El email que me solicitas es: panaderiaricotti@gmail.com 👨‍💻"]
+    },{
+      "tag": "provedor_empanadas_tel",
+      "patterns":["Cual es el telefono de nuestro proveedor de empanadas","Como es el numero de el que nos provee la empanada Argentina","¿Cómo es el telefono el proveedor de empanadas?","¿Dame el numero de quién nos vende las empanadas","¿Dame el numero de el que nos facilita nuestras empanadas?","¿Dame el telefono de quién es nuestro proveedor oficial de empanadas?","¿Cómo es el telefono de el que nos provee la empanada argentina?","¿Cómo es el numero de el que nos provee la empanada de pollo?","¿Cómo sale el telefono de el que nos provee la empanada de jamon y queso?","¿Cómo sale el telefono de el que nos vende palitos de queso?","Dame el telefno de quien es el proveedor del pastel de pollo","EL celular de el que nos surte el pastel de carne cual es?","dame el numero de quien nos provee nuestro pastel de bocadillo","Sabes el numero celular de nuestro proveedor de el coissant de almendras"],
+      "responses":[" El telefono que me solicitas es: 576076478794 👨‍💻"]
+    },{
+      "tag": "provedor_empanadas_direc",
+      "patterns":["Cual es la ubicacion de nuestro proveedor de empanadas","Como es la direccion de el que nos provee la empanada Argentina","¿Cómo es la direccion de el proveedor de empanadas?","¿Dame la direccion de quién nos vende las empanadas","¿Dame la ubicacion de el que nos facilita nuestras empanadas?","¿Dame la direccion de quién es nuestro proveedor oficial de empanadas?","¿Cómo es la direccion de el que nos provee la empanada argentina?","¿Cual es la ciudad de el que nos provee la empanada de pollo?","¿Cómo sale la direccion de el que nos provee la empanada de jamon y queso?","¿Cómo sale la direccion de el que nos vende palitos de queso?","Dame la direccion de quien es el proveedor del pastel de pollo","La direccion de el que nos surte el pastel de carne cual es?","dame la direccion de quien nos provee nuestro pastel de bocadillo","Sabes la direccion de nuestro proveedor de el coissant de almendras"],
+      "responses":["La direccion de nuestro proveedor es: Bucaramanga, Colombia - Carrera 23 #53-25 👨‍💻"]
+    },{
+      "tag": "provedor_empanadas_toda_info",
+      "patterns":["Cual es toda la informacion de nuestro proveedor de empanadas","Como es toda la informacion de el que nos provee la empanada Argentina","¿Cómo son los datos completos de el proveedor de empanadas?","¿Dame todos los datos de quién nos vende las empanadas","¿Dame los datos completos de el que nos facilita nuestras empanadas?","¿Dame todos los datos de quién es nuestro proveedor oficial de empanadas?","¿Cómo son los datos completos de el que nos provee la empanada argentina?","¿Cuales son los datos exactos de el que nos provee la empanada de pollo?","¿Cómo son todos los datos de el que nos provee la empanada de jamon y queso?","¿Cómo son los datos de el que nos vende palitos de queso?","Dame los datos de quien es el proveedor del pastel de pollo","Dame todos los datos de el que nos surte el pastel de carne cual es?","dame los datos exactos y completos de quien nos provee nuestro pastel de bocadillo","Sabes los datos de nuestro proveedor de el coissant de almendras"],
+      "responses":["Claro, aca estan los datos completos: \n\nNombre: Panadería Ricotti. \nEmail: panaderiaricotti@gmail.com.  \nTelefono:  576076478794.   \nDireccion: Carrera 23 #53-25 - Bucaramanga, Colombia.  😄"]
+    },{
+      "tag": "provedor_super_info completa",
+      "patterns": ["dame la informacion completa de el que nos vende panela","Dame toda la informacion de nuestro proveedor de agua","Cual es toda la informacion de nuestro proveedor de hielo","Cual es toda la informacion de nuestro proveedor de café","Cual es toda la informacion de nuestro proveedor de leche","Cual es toda la informacion de nuestro proveedor de saborizante de macadamia","Cual es toda la informacion de nuestro proveedor de saborizante de caramelo","Cual es toda la informacion de nuestro proveedor de saborizante de vainilla","Cual es toda la informacion de nuestro proveedor de saborizante de coco","Cual es toda la informacion de nuestro proveedor de leche de almendras", "Cual es toda la informacion de nuestro proveedor de saborizante malvaviscos","Cual es toda la informacion de nuestro proveedor de malvaviscos","Cual es toda la informacion de nuestro proveedor de chantilly","Cual es toda la informacion de nuestro proveedor de Bailys", "Cual es toda la informacion de nuestro proveedor de whisky","Cual es toda la informacion de nuestro proveedor de amaretto","Dame es toda la informacion de nuestro proveedor de cocoa","Cual es toda la informacion de nuestro proveedor de panela","Cual es toda la informacion de nuestro proveedor de canela","Cual es toda la informacion de nuestro proveedor de aguardiente","Cual es toda la informacion de nuestro proveedor de leche condensada","Dame es toda la informacion de nuestro proveedor de crema de leche","Cual es toda la informacion de nuestro proveedor de milo","Cual es toda la informacion de nuestro proveedor de té","Cual es toda la informacion de nuestro proveedor de cereza","Cual es toda la informacion de nuestro proveedor de hierbabuena","Cual es toda la informacion de nuestro proveedor de manzana","Cual es toda la informacion de nuestro proveedor de fresa", "Cual es toda la informacion de nuestro proveedor de granadina","Cual es toda la informacion de nuestro proveedor de leche en polvo", "Cual es toda la informacion de nuestro proveedor de sirope de chocolate","Cual es toda la informacion de nuestro proveedor de galletas oreo","Cual es toda la informacion de nuestro proveedor de brownie", "Cual es toda la informacion de nuestro proveedor de azúcar","Cual es toda la informacion de nuestro proveedor de limón","Cual es toda la informacion de nuestro proveedor de pulpa de mango","Dame es toda la informacion de nuestro proveedor de saborizante de lichi","Cual es toda la informacion de nuestro proveedor de pulpa de cereza","Cual es toda la informacion de nuestro proveedor de pulpa de granadina", "Cual es toda la informacion de nuestro proveedor de pulpa de manzana","Dame es toda la informacion de nuestro proveedor de pulpa de fresa","Cual es toda la informacion de nuestro proveedor de soda","Cual es toda la informacion de nuestro proveedor de helado de vainilla", "Cual es toda la informacion de nuestro proveedor de Club Colombia","Cual es toda la informacion de nuestro proveedor de Heineken","Cual es toda la informacion de nuestro proveedor de Corona","Dame es toda la informacion de nuestro proveedor de Tres Cordilleras","Cual es toda la informacion de nuestro proveedor de Black & White","Cual es toda la informacion de nuestro proveedor de tequila","Cual es toda la informacion de nuestro proveedor de ron blanco","Cual es toda la informacion de nuestro proveedor de maracuyá","Dame toda la informacion de nuestro proveedor de triple sec","Cual es toda la informacion de nuestro proveedor de vodka","Cual es toda la informacion de nuestro proveedor de jugo de naranja"],
+      "responses":["Claro, aca estan los datos completos: \n\nNombre: EL super. \nEmail: No disponible.  \nTelefono:  (607) 697-9707.   \nDireccion: Carrera 33 #32-40, La Aurora - Bucaramanga, Colombia.  😄"]
+    },{
+      "tag": "provedor_super_nombre",
+      "patterns": ["Dame es el nombre de nuestro proveedor de agua","Dame el nombre de nuestro proveedor de hielo","dame el nombre de nuestro proveedor de café","Cual es el nombre de nuestro proveedor de leche", "Cual es el nombre de nuestro proveedor de saborizante de macadamia","Cual es el nombre de nuestro proveedor de saborizante de caramelo","Dame el nombre de nuestro proveedor de saborizante de vainilla","Dime el nombre de nuestro proveedor de saborizante de coco", "Cual es el nombre de nuestro proveedor de leche de almendras", "Cual es el nombre de nuestro proveedor de saborizante malvaviscos", "Cual es el nombre de nuestro proveedor de malvaviscos","Cual es el nombre de nuestro proveedor de chantilly", "Cual es el nombre de nuestro proveedor de Bailys", "Como es el nombre de nuestro proveedor de whisky", "DIme el nombre de nuestro proveedor de amaretto","Cual es el nombre de nuestro proveedor de cocoa","Cual es el nombre de nuestro proveedor de panela","Cual es el nombre de nuestro proveedor de canela","Como se llama nuestro proveedor de aguardiente","Como se llama nuestro proveedor de leche condensada","Cual es el nombre de nuestro proveedor de crema de leche","Cual es el nombre de nuestro proveedor de milo","Cual es el nombre de nuestro proveedor de té","Cual es el nombre de nuestro proveedor de cereza","Cual es el nombre de nuestro proveedor de hierbabuena","Cual es el nombre de nuestro proveedor de manzana", "Cual es el nombre de nuestro proveedor de fresa","Cual es el nombre de nuestro proveedor de granadina", "Cual es el nombre de nuestro proveedor de leche en polvo","Cual es el nombre de nuestro proveedor de sirope de chocolate","Cual es el nombre de nuestro proveedor de galletas oreo","Cual es el nombre de nuestro proveedor de brownie","Cual es el nombre de nuestro proveedor de azúcar","Cual es el nombre de nuestro proveedor de limón", "Cual es el nombre de nuestro proveedor de pulpa de mango", "Cual es el nombre de nuestro proveedor de saborizante de lichi","Cual es el nombre de nuestro proveedor de pulpa de cereza","Cual es el nombre de nuestro proveedor de pulpa de granadina","Cual es el nombre de nuestro proveedor de pulpa de manzana","Cual es el nombre de nuestro proveedor de pulpa de fresa","Cual es el nombre de nuestro proveedor de soda","Cual es el nombre de nuestro proveedor de helado de vainilla", "Cual es el nombre de nuestro proveedor de Club Colombia","Cual es el nombre de nuestro proveedor de Heineken","Cual es el nombre de nuestro proveedor de Corona","Cual es el nombre de nuestro proveedor de Tres Cordilleras","Cual es el nombre de nuestro proveedor de Black & White","Cual es el nombre de nuestro proveedor de tequila","Cual es el nombre de nuestro proveedor de ron blanco","Cual es el nombre de nuestro proveedor de maracuyá","Cual es el nombre de nuestro proveedor de triple sec","Cual es el nombre de nuestro proveedor de vodka","Cual es el nombre de nuestro proveedor de jugo de naranja"],
+      "responses":["Nuestro proveedor de ese producto es el supermercado 'El super' 🍮😄"]
+    },{
+      "tag": "provedor_super_email",
+      "patterns": ["Cual es el email de nuestro proveedor de agua","Dame el email de nuestro proveedor de hielo","Cual es el email de nuestro proveedor de café","Dame el email de nuestro proveedor de leche", "Cual es el email de nuestro proveedor de saborizante de macadamia", "Dame el email de nuestro proveedor de saborizante de caramelo", "Cual es el email de nuestro proveedor de saborizante de vainilla","Dame el email de nuestro proveedor de saborizante de coco", "Cual es el email de nuestro proveedor de leche de almendras", "Dame el email de nuestro proveedor de saborizante malvaviscos", "Cual es el email de nuestro proveedor de malvaviscos", "Dame el email de nuestro proveedor de chantilly", "Cual es el email de nuestro proveedor de Bailys", "Dame el email de nuestro proveedor de whisky", "Cual es el email de nuestro proveedor de amaretto", "Dame el email de nuestro proveedor de cocoa", "Cual es el email de nuestro proveedor de panela", "Dame el email de nuestro proveedor de canela", "Cual es el email de nuestro proveedor de aguardiente", "Dame el email de nuestro proveedor de leche condensada","Cual es el email de nuestro proveedor de crema de leche" ,"Dame el email de nuestro proveedor de milo", "Cual es el email de nuestro proveedor de té", "Dame el email de nuestro proveedor de cereza","Cual es el email de nuestro proveedor de hierbabuena", "Dame el email de nuestro proveedor de manzana", "Cual es el email de nuestro proveedor de fresa", "Dame el email de nuestro proveedor de granadina", "Cual es el email de nuestro proveedor de leche en polvo", "Dame el email de nuestro proveedor de sirope de chocolate", "Cual es el email de nuestro proveedor de galletas oreo", "Dame el email de nuestro proveedor de brownie", "Cual es el email de nuestro proveedor de azúcar", "Dame el email de nuestro proveedor de limón", "Cual es el email de nuestro proveedor de pulpa de mango", "Dame el email de nuestro proveedor de saborizante de lichi", "Cual es el email de nuestro proveedor de pulpa de cereza","Dame el email de nuestro proveedor de pulpa de granadina","Cual es el email de nuestro proveedor de pulpa de manzana","Dame el email de nuestro proveedor de pulpa de fresa","Cual es el email de nuestro proveedor de soda", "Dame el email de nuestro proveedor de helado de vainilla", "Cual es el email de nuestro proveedor de Club Colombia", "Dame el email de nuestro proveedor de Heineken", "Cual es el email de nuestro proveedor de Corona", "Dame el email de nuestro proveedor de Tres Cordilleras", "Cual es el email de nuestro proveedor de Black & White", "Dame el email de nuestro proveedor de tequila", "Cual es el email de nuestro proveedor de ron blanco","Dame el email de nuestro proveedor de maracuyá", "Cual es el email de nuestro proveedor de triple sec","Dame el email de nuestro proveedor de vodka","Cual es el email de nuestro proveedor de jugo de naranja"],
+      "responses":["El email que me solicitas no esta dispoible (este proveedor no tiene email) 👨‍💻"]
+    },{
+      "tag": "provedor_super_tel",
+      "patterns": [ "Cual es el número de teléfono de nuestro proveedor de agua","Dame el número de teléfono de nuestro proveedor de hielo","Cual es el número de teléfono de nuestro proveedor de café", "Dame el número de teléfono de nuestro proveedor de leche", "Cual es el número de teléfono de nuestro proveedor de saborizante de macadamia","Dame el número de teléfono de nuestro proveedor de saborizante de caramelo","Cual es el número de teléfono de nuestro proveedor de saborizante de vainilla","Dame el número de teléfono de nuestro proveedor de saborizante de coco","Cual es el número de teléfono de nuestro proveedor de leche de almendras","Dame el número de teléfono de nuestro proveedor de saborizante malvaviscos", "Cual es el número de teléfono de nuestro proveedor de malvaviscos", "Dame el número de teléfono de nuestro proveedor de chantilly", "Cual es el número de teléfono de nuestro proveedor de Bailys", "Dame el número de teléfono de nuestro proveedor de whisky", "Cual es el número de teléfono de nuestro proveedor de amaretto","Dame el número de teléfono de nuestro proveedor de cocoa", "Cual es el número de teléfono de nuestro proveedor de panela", "Dame el número de teléfono de nuestro proveedor de canela","Cual es el número de teléfono de nuestro proveedor de aguardiente","Dame el número de teléfono de nuestro proveedor de leche condensada","Cual es el número de teléfono de nuestro proveedor de crema de leche","Dame el número de teléfono de nuestro proveedor de milo", "Cual es el número de teléfono de nuestro proveedor de té", "Dame el número de teléfono de nuestro proveedor de cereza", "Cual es el número de teléfono de nuestro proveedor de hierbabuena", "Dame el número de teléfono de nuestro proveedor de manzana", "Cual es el número de teléfono de nuestro proveedor de fresa","Dame el número de teléfono de nuestro proveedor de granadina", "Cual es el número de teléfono de nuestro proveedor de leche en polvo", "Dame el número de teléfono de nuestro proveedor de sirope de chocolate", "Cual es el número de teléfono de nuestro proveedor de galletas oreo", "Dame el número de teléfono de nuestro proveedor de brownie", "Cual es el número de teléfono de nuestro proveedor de azúcar", "Dame el número de teléfono de nuestro proveedor de limón","Cual es el número de teléfono de nuestro proveedor de pulpa de mango","Dame el número de teléfono de nuestro proveedor de saborizante de lichi", "Cual es el número de teléfono de nuestro proveedor de pulpa de cereza", "Dame el número de teléfono de nuestro proveedor de pulpa de granadina", "Cual es el número de teléfono de nuestro proveedor de pulpa de manzana","Dame el número de teléfono de nuestro proveedor de pulpa de fresa","Cual es el número de teléfono de nuestro proveedor de soda","Dame el número de teléfono de nuestro proveedor de helado de vainilla", "Cual es el número de teléfono de nuestro proveedor de Club Colombia", "Dame el número de teléfono de nuestro proveedor de Heineken", "Cual es el número de teléfono de nuestro proveedor de Corona", "Dame el número de teléfono de nuestro proveedor de Tres Cordilleras", "Cual es el número de teléfono de nuestro proveedor de Black & White", "Dame el número de teléfono de nuestro proveedor de tequila", "Cual es el número de teléfono de nuestro proveedor de ron blanco", "Dame el número de teléfono de nuestro proveedor de maracuyá", "Cual es el número de teléfono de nuestro proveedor de triple sec","Dame el número de teléfono de nuestro proveedor de vodka","Cual es el número de teléfono de nuestro proveedor de jugo de naranja"],
+      "responses":["El telefono que me solicitas es: (607) 697-9707 👨‍💻"]
+    },{
+      "tag": "provedor_super_direc",
+      "patterns": ["Dame la dirección de nuestro proveedor de agua","Dime dónde está ubicado nuestro proveedor de hielo","Dónde es la dirección de nuestro proveedor de café","Dame la dirección de nuestro proveedor de leche","Dime dónde está ubicado nuestro proveedor de saborizante de macadamia", "Dónde es la dirección de nuestro proveedor de saborizante de caramelo", "Dame la dirección de nuestro proveedor de saborizante de vainilla", "Dime dónde está ubicado nuestro proveedor de saborizante de coco", "Dónde es la dirección de nuestro proveedor de leche de almendras","Dame la dirección de nuestro proveedor de saborizante malvaviscos","Dime dónde está ubicado nuestro proveedor de malvaviscos","Dónde es la dirección de nuestro proveedor de chantilly","Dame la dirección de nuestro proveedor de Bailys","Dime dónde está ubicado nuestro proveedor de whisky","Dónde es la dirección de nuestro proveedor de amaretto", "Dame la dirección de nuestro proveedor de cocoa", "Dime dónde está ubicado nuestro proveedor de panela", "Dónde es la dirección de nuestro proveedor de canela", "Dame la dirección de nuestro proveedor de aguardiente", "Dime dónde está ubicado nuestro proveedor de leche condensada", "Dónde es la dirección de nuestro proveedor de crema de leche", "Dame la dirección de nuestro proveedor de milo", "Dime dónde está ubicado nuestro proveedor de té", "Dónde es la dirección de nuestro proveedor de cereza","Dame la dirección de nuestro proveedor de hierbabuena","Dime dónde está ubicado nuestro proveedor de manzana","Dónde es la dirección de nuestro proveedor de fresa", "Dame la dirección de nuestro proveedor de granadina", "Dime dónde está ubicado nuestro proveedor de leche en polvo","Dónde es la dirección de nuestro proveedor de sirope de chocolate", "Dame la dirección de nuestro proveedor de galletas oreo", "Dime dónde está ubicado nuestro proveedor de brownie", "Dónde es la dirección de nuestro proveedor de azúcar", "Dame la dirección de nuestro proveedor de limón", "Dime dónde está ubicado nuestro proveedor de pulpa de mango","Dónde es la dirección de nuestro proveedor de saborizante de lichi", "Dame la dirección de nuestro proveedor de pulpa de cereza", "Dime dónde está ubicado nuestro proveedor de pulpa de granadina","Dónde es la dirección de nuestro proveedor de pulpa de manzana","Dame la dirección de nuestro proveedor de pulpa de fresa","Dime dónde está ubicado nuestro proveedor de soda","Dónde es la dirección de nuestro proveedor de helado de vainilla","Dame la dirección de nuestro proveedor de Club Colombia", "Dime dónde está ubicado nuestro proveedor de Heineken","Dónde es la dirección de nuestro proveedor de Corona", "Dame la dirección de nuestro proveedor de Tres Cordilleras", "Dime dónde está ubicado nuestro proveedor de Black & White", "Dónde es la dirección de nuestro proveedor de tequila", "Dame la dirección de nuestro proveedor de ron blanco", "Dime dónde está ubicado nuestro proveedor de maracuyá","Dónde es la dirección de nuestro proveedor de triple sec","Dame la dirección de nuestro proveedor de vodka","Dime dónde está ubicado nuestro proveedor de jugo de naranja"],
+      "responses":["Direccion: Carrera 33 #32-40, La Aurora - Bucaramanga, Colombia. 😄"]
+    },{
+      "tag": "provedor_santa_ines_nombre",
+      "patterns": ["¿Cuál es el nombre de nuestro proveedor de torta red velvet?","¿Cómo se llama el que nos provee torta chocolate?", "¿Cuál es el nombre de nuestro proveedor de torta zanahoria?","Cual es el nombre de nuestro proveedor de tortas?"],
+      "responses":["Nuestro proveedor de ese producto es la panaderia 'Santa ines' 🍮😄"]
+    },{
+      "tag": "provedor_santa_ines_tel",
+      "patterns": ["¿Cuál es el número de nuestro proveedor de torta red velvet?","¿Cómo es el teléfono del que nos provee torta chocolate?","¿Cuál es el número de nuestro proveedor de torta zanahoria?"],
+      "responses":["El telefono que me solicitas es: 576076478794 👨‍💻"]
+    },{
+      "tag": "provedor_santa_ines_tel",
+      "patterns": ["¿Cuál es el número de nuestro proveedor de torta red velvet?","¿Cómo es el teléfono del que nos provee torta chocolate?","¿Cuál es el número de nuestro proveedor de torta zanahoria?"],
+      "responses":["El telefono que me solicitas es: 576076478794 👨‍💻"]
+    },{
+      "tag": "provedor_santa_ines_email",
+      "patterns": ["¿Cuál es el email de nuestro proveedor de torta red velvet?","¿Cómo es el email del que nos provee torta chocolate?","¿Cuál es el email de nuestro proveedor de torta zanahoria?"],
+      "responses":["El email que me solicitas no esta dispoible (este proveedor no tiene email) 👨‍💻"]
+    },{
+      "tag": "provedor_santa_ines_direc",
+      "patterns": ["¿Cuál es la direccion de nuestro proveedor de torta red velvet?","¿como es la ubicacion del que nos provee torta chocolate?","¿Cuál es la direccion de nuestro proveedor de torta zanahoria?"],
+      "responses":["La direccion de la panaderia 'Santa ines' es: Carrera 23 #53-25 - Bucaramanga - Colombia 👨‍💻"]
+    },{
+      "tag": "provedor_santaines_info completa",
+      "patterns": ["Dame la informacion completa de el que nos vende las tortas","Dame la información completa de nuestro proveedor de torta red velvet.","Dime toda la información de el que nos provee torta chocolate.","Dame la información completa de nuestro proveedor de torta zanahoria."],
+      "responses":["Claro, aca estan los datos completos: \n\nNombre: Panaderia Santa Ines. \nEmail: No disponible.  \nTelefono:  576076478794.   \nDireccion: Carrera 23 #53-25 - Bucaramanga, Colombia.  😄"]
+    },{
+      "tag": "materias_primas",
+      "patterns": [
+        "podrías mostrarme las materias primas?",
+        "dime el nombre de todas nuestras materias primas",
+        "cuáles son nuestras materias primas"
+      ],
+      "responses": [
+        "Estas son nuestras materias primas actualmente disponibles:\n\n1. Agua (mL)\n2. Hielo (gr)\n3. Café (gr)\n4. Leche (mL)\n5. Saborizante de Macadamia (mL)\n6. Saborizante de Caramelo (mL)\n7. Saborizante de Vainilla (mL)\n8. Saborizante de Coco (mL)\n9. Leche de Almendras (mL)\n10. Saborizante de Malvaviscos (mL)\n11. Malvaviscos (gr)\n12. Chantilly (gr)\n13. Baileys (mL)\n14. Whisky (mL)\n15. Amaretto (mL)\n16. Cocoa (gr)\n17. Panela (gr)\n18. Canela (gr)\n19. Aguardiente (mL)\n20. Leche Condensada (gr)\n21. Crema de Leche (gr)\n22. Milo (gr)\n23. Té (unidades)\n24. Cereza (gr)\n25. Hierbabuena (gr)\n26. Manzana (unidades)\n27. Fresa (unidades)\n28. Granadina (mL)\n29. Sirope de Chocolate (mL)\n30. Galletas Oreo (unidades)\n31. Brownie (unidades)\n32. Azúcar (gr)\n33. Limón (unidades)\n34. Pulpa de Mango (gr)\n35. Saborizante de Lichi (mL)\n36. Pulpa de Cereza (gr)\n37. Pulpa de Granadina (gr)\n38. Pulpa de Manzana (gr)\n39. Pulpa de Fresa (gr)\n40. Soda (mL)\n41. Helado de Vainilla (gr)\n42. Club Colombia (unidades)\n43. Heineken (unidades)\n44. Corona (unidades)\n45. Tres Cordilleras (unidades)\n46. Black & White (mL)\n47. Tequila (mL)\n48. Ron Blanco (mL)\n49. Maracuyá (unidades)\n50. Triple C (mL)\n51. Vodka (mL)\n52. Jugo de Naranja (mL)\n53. Empanada Argentina (unidades)\n54. Empanada de Pollo (unidades)\n55. Empanada de Pollo, Jamón y Queso (unidades)\n56. Torta Red Velvet (unidades)\n57. Torta Chocolate (unidades)\n58. Torta Zanahoria (unidades)\n59. Palitos de Queso (unidades)\n60. Pastel de Pollo (unidades)\n61. Pastel de Carne (unidades)\n62. Pastel de Bocadillo (unidades)\n63. Croissant de Almendras (unidades)"
+      ],
+      "id_categoria": null,
+      "id_producto": null
+    },{
+      "tag": "cappuccino_tradicional",
+      "patterns": [
+        "¿Qué contiene nuestro Cappuccino Tradicional?",
+        "¿Qué materias primas se utilizan para generar nuestro Cappuccino Tradicional?",
+        "¿Qué insumos se necesitan para preparar nuestro Cappuccino Tradicional?"
+      ],
+      "responses": [
+        "Nuestro Cappuccino Tradicional se prepara con 14 gr de Café, 180 mL de Leche. ☕"
+      ],
+      "id_categoria": 1,
+      "id_producto": 1
+    },
+      {
+        "tag": "Cappuccino_macadamia",
+        "patterns": [
+          "¿Qué contiene nuestro Cappuccino Macadamia?",
+          "¿Qué materias primas se utilizan para generar nuestro Cappuccino Macadamia?",
+          "¿Qué insumos se necesitan para preparar nuestro Cappuccino Macadamia?"
+        ],
+        "responses": [
+          "Nuestro Cappuccino Macadamia se prepara con 14 gr de Café, 150 mL de Leche, 30 mL de Saborizante de Macadamia. ☕"
+        ],
+        "id_categoria": 1,
+        "id_producto": 2
+      },
+    {
+  "tag": "cappuccino_caramelo",
+  "patterns": [
+    "como se prepara nuestro capuchino de caramelo",
+    "¿Qué contiene nuestro Cappuccino Caramelo?",
+    "¿Qué materias primas se utilizan para generar nuestro Cappuccino Caramelo?",
+    "¿Qué insumos se necesitan para preparar nuestro Cappuccino Caramelo?"
+  ],
+  "responses": [
+    "Nuestro Cappuccino Caramelo se prepara con 14 gr de Café, 150 mL de Leche, 30 mL de Saborizante de Caramelo. ☕"
+  ],
+  "id_categoria": 1,
+  "id_producto": 3
+},
+{
+  "tag": "cappuccino_vainilla",
+  "patterns": [
+    "¿Qué contiene nuestro Cappuccino Vainilla?",
+    "¿Qué materias primas se utilizan para generar nuestro Cappuccino Vainilla?",
+    "¿Qué insumos se necesitan para preparar nuestro Cappuccino Vainilla?"
+  ],
+  "responses": [
+    "Nuestro Cappuccino Vainilla se prepara con 14 gr de Café, 150 mL de Leche, 30 mL de Saborizante de Vainilla. ☕"
+  ],
+  "id_categoria": 1,
+  "id_producto": 4
+},
+{
+  "tag": "cappuccino_coco",
+  "patterns": [
+    "¿Qué contiene nuestro Cappuccino Coco?",
+    "¿Qué materias primas se utilizan para generar nuestro Cappuccino Coco?",
+    "¿Qué insumos se necesitan para preparar nuestro Cappuccino Coco?"
+  ],
+  "responses": [
+    "Nuestro Cappuccino Coco se prepara con 14 gr de Café, 150 mL de Leche, 30 mL de Saborizante de Coco. ☕"
+  ],
+  "id_categoria": 1,
+  "id_producto": 5
+},
+{
+  "tag": "cappuccino_en_leche_de_almendras",
+  "patterns": [
+    "¿Qué contiene nuestro Cappuccino en leche de Almendras?",
+    "¿Qué materias primas se utilizan para generar nuestro Cappuccino en leche de Almendras?",
+    "¿Qué insumos se necesitan para preparar nuestro Cappuccino en leche de Almendras?"
+  ],
+  "responses": [
+    "Nuestro Cappuccino en leche de Almendras se prepara con 14 gr de Café, 180 mL de Leche de Almendras. ☕"
+  ],
+  "id_categoria": 1,
+  "id_producto": 6
+},
+{
+  "tag": "cappuccino_malvaviscos",
+  "patterns": [
+    "¿Qué contiene nuestro Cappuccino Malvaviscos?",
+    "¿Qué materias primas se utilizan para generar nuestro Cappuccino Malvaviscos?",
+    "¿Qué insumos se necesitan para preparar nuestro Cappuccino Malvaviscos?"
+  ],
+  "responses": [
+    "Nuestro Cappuccino Malvaviscos se prepara con 14 gr de Café, 150 mL de Leche, 30 mL de Saborizante de Malvaviscos, 10 gr de Malvaviscos. ☕"
+  ],
+  "id_categoria": 1,
+  "id_producto": 7
+},
+{
+  "tag": "cappuccino_vienés",
+  "patterns": [
+    "¿Qué contiene nuestro Cappuccino Vienés?",
+    "¿Qué materias primas se utilizan para generar nuestro Cappuccino Vienés?",
+    "¿Qué insumos se necesitan para preparar nuestro Cappuccino Vienés?"
+  ],
+  "responses": [
+    "Nuestro Cappuccino Vienés se prepara con 14 gr de Café, 180 mL de Leche, 15 gr de Chantilly. ☕"
+  ],
+  "id_categoria": 1,
+  "id_producto": 8
+},
+{
+  "tag": "cappuccino_irlandés_baileys",
+  "patterns": [
+    "¿Qué contiene nuestro Cappuccino Irlandés baileys?",
+    "¿Qué materias primas se utilizan para generar nuestro Cappuccino Irlandés baileys?",
+    "¿Qué insumos se necesitan para preparar nuestro Cappuccino Irlandés baileys?"
+  ],
+  "responses": [
+    "Nuestro Cappuccino Irlandés baileys se prepara con 14 gr de Café, 120 mL de Leche, 60 mL de Baileys. ☕"
+  ],
+  "id_categoria": 1,
+  "id_producto": 9
+},
+{
+  "tag": "cappuccino_irlandes_amaretto",
+  "patterns": [
+    "¿Qué contiene nuestro Cappuccino Irlandes amaretto?",
+    "¿Qué materias primas se utilizan para generar nuestro Cappuccino Irlandes amaretto?",
+    "¿Qué insumos se necesitan para preparar nuestro Cappuccino Irlandes amaretto?"
+  ],
+  "responses": [
+    "Nuestro Cappuccino Irlandés amaretto se prepara con 14 gr de Café, 120 mL de Leche, 60 mL de Amaretto. ☕"
+  ],
+  "id_categoria": 1,
+  "id_producto": 106
+},
+{
+  "tag": "cappuccino_irlandés_whisky",
+  "patterns": [
+    "como se hace nuestro capuccino irlandes whisky",
+    "¿Qué contiene nuestro Cappuccino Irlandes whisky?",
+    "¿Qué materias primas se utilizan para generar nuestro Cappuccino Irlandes whisky?",
+    "¿Qué insumos se necesitan para preparar nuestro Cappuccino Irlandes whisky?"
+  ],
+  "responses": [
+    "Nuestro Cappuccino Irlandés whisky se prepara con 14 gr de Café, 120 mL de Leche, 60 mL de Whisky. ☕"
+  ],
+  "id_categoria": 1,
+  "id_producto": 107
+},
+{
+  "tag": "cappuccino_mocaccino",
+  "patterns": [
+    "¿Qué contiene nuestro Cappuccino Mocaccino?",
+    "¿Qué materias primas se utilizan para generar nuestro Cappuccino Mocaccino?",
+    "¿Qué insumos se necesitan para preparar nuestro Cappuccino Mocaccino?"
+  ],
+  "responses": [
+    "Nuestro Cappuccino Mocaccino se prepara con 14 gr de Café, 180 mL de Leche, 10 gr de Cocoa. ☕"
+  ],
+  "id_categoria": 1,
+  "id_producto": 10
+},{
+  "tag": "tinto",
+  "patterns": [
+    "¿Qué contiene nuestro  Tinto?",
+    "¿Qué materias primas se utilizan para generar nuestro Tinto?",
+    "¿Qué insumos se necesitan para preparar nuestro Tinto?"
+  ],
+  "responses": [
+    "Nuestro Tinto se prepara con 7 gr de Cafe y 180 mL de Agua. ☕"
+  ],
+  "id_categoria": 2,
+  "id_producto": 11
+},{
+  "tag": "tinto_doble",
+  "patterns": [
+    "¿Qué contiene nuestro  Tinto doble?",
+    "¿Qué materias primas se utilizan para generar nuestro Tinto doble?",
+    "¿Qué insumos se necesitan para preparar nuestro Tinto doble?"
+  ],
+  "responses": [
+    "Nuestro Tinto doble se prepara con 14 gr de Café y 240 mL de Agua. ☕"
+  ],
+  "id_categoria": 2,
+  "id_producto": 12
+}, {
+  "tag": "tinto_chantilly",
+  "patterns": [
+    "¿Qué contiene nuestro Tinto Chantilly?",
+    "¿Qué materias primas se utilizan para generar nuestro Tinto Chantilly?",
+    "¿Qué insumos se necesitan para preparar nuestro Tinto Chantilly?"
+  ],
+  "responses": [
+    "Nuestro Tinto Chantilly se prepara con 7 gr de Café, 180 mL de Agua y 40 gr de Chantilly. ☕"
+  ],
+  "id_categoria": 2,
+  "id_producto": 13
+},{
+  "tag": "campesino",
+  "patterns": [
+    "¿Qué contiene nuestro Café Campesino?",
+    "¿Qué materias primas se utilizan para generar nuestro Café Campesino?",
+    "¿Qué insumos se necesitan para preparar nuestro Café Campesino?"
+  ],
+  "responses": [
+    "Nuestro Café Campesino se prepara con 7 gr de Café, 180 mL de Agua y 5 gr de Panela. ☕"
+  ],
+  "id_categoria": 2,
+  "id_producto": 14
+},{
+  "tag": "cafe_campesino_doble",
+  "patterns": [
+    "¿Qué contiene nuestro Café Campesino doble?",
+    "¿Qué materias primas se utilizan para generar nuestro Café Campesino doble?",
+    "¿Qué insumos se necesitan para preparar nuestro Café Campesino doble?"
+  ],
+  "responses": [
+    "Nuestro Café Campesino doble se prepara con 14 gr de Café, 240 mL de Agua, 5 gr de Panela y 5 gr de Canela. ☕"
+  ],
+  "id_categoria": 2,
+  "id_producto": 15
+}, {
+  "tag": "cafe_americano_carajillo",
+  "patterns": [
+    "¿Qué contiene nuestro Café Americano Carajillo?",
+    "¿Qué materias primas se utilizan para generar nuestro Café Americano Carajillo?",
+    "¿Qué insumos se necesitan para preparar nuestro Café Americano Carajillo?"
+  ],
+  "responses": [
+    "Nuestro Café Americano Carajillo se prepara con 7 gr de Café, 180 mL de Agua y 30 mL de Aguardiente. ☕"
+  ],
+  "id_categoria": 2,
+  "id_producto": 16
+},{
+  "tag": "expressos_corto",
+  "patterns": [
+    "¿Qué contiene nuestro Expresso Corto?",
+    "¿Qué materias primas se utilizan para generar nuestro Expresso Corto?",
+    "¿Qué insumos se necesitan para preparar nuestro Expresso Corto?"
+  ],
+  "responses": [
+    "Nuestro Expressos Corto se prepara con 7 gr de Café y 30 mL de Agua. ☕"
+  ],
+  "id_categoria": 3,
+  "id_producto": 17
+},
+{
+  "tag": "expressos_largo",
+  "patterns": [
+    "¿Qué contiene nuestro Expresso Largo?",
+    "¿Qué materias primas se utilizan para generar nuestro Expresso Largo?",
+    "¿Qué insumos se necesitan para preparar nuestro Expresso Largo?"
+  ],
+  "responses": [
+    "Nuestro Expressos Largo se prepara con 7 gr de Café y 45 mL de Agua. ☕"
+  ],
+  "id_categoria": 3,
+  "id_producto": 18
+},
+{
+  "tag": "expressos_doble",
+  "patterns": [
+    "¿Qué contiene nuestro Expresso Doble?",
+    "¿Qué materias primas se utilizan para generar nuestro Expresso Doble?",
+    "¿Qué insumos se necesitan para preparar nuestro Expresso Doble?"
+  ],
+  "responses": [
+    "Nuestro Expressos Doble se prepara con 14 gr de Café y 30 mL de Agua. ☕"
+  ],
+  "id_categoria": 3,
+  "id_producto": 19
+},
+{
+  "tag": "expressos_bombom",
+  "patterns": [
+    "¿Qué contiene nuestro Expresso Bombom?",
+    "¿Qué materias primas se utilizan para generar nuestro Expresso Bombom?",
+    "¿Qué insumos se necesitan para preparar nuestro Expresso Bombom?"
+  ],
+  "responses": [
+    "Nuestro Expressos Bombom se prepara con 7 gr de Café, 30 mL de Agua, 20 gr de Leche Condensada y 10 gr de Crema de Leche. ☕"
+  ],
+  "id_categoria": 3,
+  "id_producto": 20
+},
+{
+  "tag": "expressos_bombom_doble",
+  "patterns": [
+    "¿Qué contiene nuestro Expresso Bombom doble?",
+    "¿Qué materias primas se utilizan para generar nuestro Expresso Bombom doble?",
+    "¿Qué insumos se necesitan para preparar nuestro Expresso Bombom doble?"
+  ],
+  "responses": [
+    "Nuestro Expressos Bombom doble se prepara con 14 gr de Café, 60 mL de Agua, 40 gr de Leche Condensada y 20 gr de Crema de Leche. ☕"
+  ],
+  "id_categoria": 3,
+  "id_producto": 21
+},
+{
+  "tag": "expressos_macchiato",
+  "patterns": [
+    "¿Qué contiene nuestro Expresso Macchiato?",
+    "¿Qué materias primas se utilizan para generar nuestro Expresso Macchiato?",
+    "¿Qué insumos se necesitan para preparar nuestro Expresso Macchiato?"
+  ],
+  "responses": [
+    "Nuestro Expressos Macchiato se prepara con 7 gr de Café, 30 mL de Agua y 20 mL de Leche. ☕"
+  ],
+  "id_categoria": 3,
+  "id_producto": 22
+},{
+  "tag": "otras_bebidas_calientes_latte",
+  "patterns": [
+    "¿Qué contiene nuestro latte?",
+    "¿Qué materias primas se utilizan para generar nuestro latte?",
+    "¿Qué insumos se necesitan para preparar nuestro late?"
+  ],
+  "responses": [
+    "Nuestro Latte se prepara con 7 gr de Café y 180 mL de Leche. ☕"
+  ],
+  "id_categoria": 4,
+  "id_producto": 23
+},
+{
+  "tag": "otras_bebidas_calientes_latte_grande",
+  "patterns": [
+    "¿Qué contiene nuestro Latte grande?",
+    "¿Qué materias primas se utilizan para generar nuestro Latte grande?",
+    "¿Qué insumos se necesitan para preparar nuestro Latte grande?"
+  ],
+  "responses": [
+    "Nuestro Otras Bebidas Calientes Latte grande se prepara con 14 gr de Café y 240 mL de Leche. ☕"
+  ],
+  "id_categoria": 4,
+  "id_producto": 24
+},
+{
+  "tag": "otras_bebidas_calientes_vaso_de_leche",
+  "patterns": [
+    "¿Qué contiene nuestro Vaso de leche?",
+    "¿Qué materias primas se utilizan para generar nuestro vaso de leche?",
+    "¿Qué insumos se necesitan para preparar nuestro vaso de leche?"
+  ],
+  "responses": [
+    "Nuestro Otras Bebidas Calientes Vaso de leche se prepara con 360 mL de Leche. ☕"
+  ],
+  "id_categoria": 4,
+  "id_producto": 25
+},
+{
+  "tag": "otras_bebidas_calientes_chocolate",
+  "patterns": [
+    "¿Qué contiene nuestro Chocolate?",
+    "¿Qué materias primas se utilizan para generar nuestro Chocolate?",
+    "¿Qué insumos se necesitan para preparar nuestro Chocolate?"
+  ],
+  "responses": [
+    "Nuestro Otras Bebidas Calientes Chocolate se prepara con 40 gr de Cocoa y 240 mL de Leche. ☕"
+  ],
+  "id_categoria": 4,
+  "id_producto": 26
+},
+{
+  "tag": "otras_bebidas_calientes_chocolate_suizo",
+  "patterns": [
+    "¿Qué contiene nuestro Chocolate Suizo?",
+    "¿Qué materias primas se utilizan para generar nuestro Chocolate Suizo?",
+    "¿Qué insumos se necesitan para preparar nuestro Chocolate Suizo?"
+  ],
+  "responses": [
+    "Nuestro Otras Bebidas Calientes Chocolate Suizo se prepara con 40 gr de Cocoa, 240 mL de Leche y 40 gr de Chantilly. ☕"
+  ],
+  "id_categoria": 4,
+  "id_producto": 27
+},
+{
+  "tag": "otras_bebidas_calientes_chocoalmendras",
+  "patterns": [
+    "¿Qué contiene nuestro Chocoalmendras?",
+    "¿Qué materias primas se utilizan para generar nuestro Chocoalmendras?",
+    "¿Qué insumos se necesitan para preparar nuestro Chocoalmendras?"
+  ],
+  "responses": [
+    "Nuestro Chocoalmendras se prepara con 40 gr de Cocoa y 240 mL de Leche de Almendras. ☕"
+  ],
+  "id_categoria": 4,
+  "id_producto": 28
+},
+{
+  "tag": "otras_bebidas_calientes_chocomalvaviscos",
+  "patterns": [
+    "¿Qué contiene nuestro Chocomalvavisco?",
+    "¿Qué materias primas se utilizan para generar chocomalvavisco?",
+    "¿Qué insumos se necesitan para preparar nuestro Chocomalvavisco?"
+  ],
+  "responses": [
+    "Nuestro Chocomalvaviscos se prepara con 40 gr de Cocoa, 240 mL de Leche y 25 gr de Malvaviscos. ☕"
+  ],
+  "id_categoria": 4,
+  "id_producto": 29
+},
+{
+  "tag": "otras_bebidas_calientes_milo_caliente",
+  "patterns": [
+    "¿Qué contiene nuestro Milo caliente?",
+    "¿Qué materias primas se utilizan para generar nuestro  Milo caliente?",
+    "¿Qué insumos se necesitan para preparar nuestro Milo caliente?"
+  ],
+  "responses": [
+    "Nuestro Milo caliente se prepara con 40 gr de Milo y 240 mL de Leche. ☕"
+  ],
+  "id_categoria": 4,
+  "id_producto": 30
+},
+{
+  "tag": "otras_bebidas_calientes_te_en_agua",
+  "patterns": [
+    "¿Qué contiene nuestro Te en agua?",
+    "¿Qué materias primas se utilizan para generar nuestro  Te en agua?",
+    "¿Qué insumos se necesitan para preparar nuestro Té en agua?"
+  ],
+  "responses": [
+    "Nuestro Té en agua se prepara con 1 unidad de Té y 270 mL de Agua. ☕"
+  ],
+  "id_categoria": 4,
+  "id_producto": 31
+},
+{
+  "tag": "otras_bebidas_calientes_te_en_leche",
+  "patterns": [
+    "¿Qué contiene nuestro Te en leche?",
+    "¿Qué materias primas se utilizan para generar nuestro Te en leche?",
+    "¿Qué insumos se necesitan para preparar nuestro Te en leche?"
+  ],
+  "responses": [
+    "Nuestro Te en leche se prepara con 1 unidad de Té y 270 mL de Leche. ☕"
+  ],
+  "id_categoria": 4,
+  "id_producto": 32
+}, {
+  "tag": "otras_bebidas_calientes_aromatica_de_frutas",
+  "patterns": [
+    "¿Qué contiene nuestra Aromática de frutas?",
+    "¿Qué materias primas se utilizan para generar nuestra Aromática de frutas?",
+    "¿Qué insumos se necesitan para preparar nuestra Aromática de frutas?"
+  ],
+  "responses": [
+    "Nuestra Aromática de frutas se prepara con 1 unidad de Té, 1 unidad de Manzana, 1 unidad de Fresa y 270 mL de Agua. 🍎🍓☕"
+  ],
+  "id_categoria": 4,
+  "id_producto": 33
+},
+{
+  "tag": "otras_bebidas_calientes_aguapanela",
+  "patterns": [
+    "¿Qué contiene nuestra Aguapanela?",
+    "¿Qué materias primas se utilizan para generar nuestra Aguapanela?",
+    "¿Qué insumos se necesitan para preparar nuestra Aguapanela?"
+  ],
+  "responses": [
+    "Nuestra Aguapanela se prepara con 30 gr de Panela y 270 mL de Agua. ☕"
+  ],
+  "id_categoria": 4,
+  "id_producto": 34
+},
+{
+  "tag": "otras_bebidas_calientes_canelazo",
+  "patterns": [
+    "¿Qué contiene nuestro canelazo?",
+    "¿Qué materias primas se utilizan para generar nuestro Canelazo?",
+    "¿Qué insumos se necesitan para preparar nuestro Canelazo?"
+  ],
+  "responses": [
+    "Nuestro Canelazo se prepara con 30 gr de Panela, 270 mL de Agua, 10 gr de Canela y 40 mL de Aguardiente. ☕"
+  ],
+  "id_categoria": 4,
+  "id_producto": 35
+},
+{
+  "tag": "frappes_capuchino",
+  "patterns": [
+    "¿Qué contiene nuestro Frappe Capuchino?",
+    "¿Qué materias primas se utilizan para generar nuestro Frappe Capuchino?",
+    "¿Qué insumos se necesitan para preparar nuestro Frappe Capuchino?"
+  ],
+  "responses": [
+    "Nuestro Frappe Capuchino se prepara con 7 gr de Café, 80 mL de Sirope de Chocolate, 350 gr de Hielo, 40 gr de Chantilly, 5 unidades de Galletas Oreo y 250 mL de Leche. ☕"
+  ],
+  "id_categoria": 5,
+  "id_producto": 36
+},
+{
+  "tag": "frappes_caramelo",
+  "patterns": [
+    "¿Qué contiene nuestro Frappe Caramelo?",
+    "¿Qué materias primas se utilizan para generar nuestro Frappe Caramelo?",
+    "¿Qué insumos se necesitan para preparar nuestro Frappe Caramelo?"
+  ],
+  "responses": [
+    "Nuestro Frappes Caramelo se prepara con 7 gr de Café, 80 mL de Sirope de Chocolate, 350 gr de Hielo, 40 gr de Chantilly, 5 unidades de Galletas Oreo, 240 mL de Leche y 30 mL de Saborizante de Caramelo. ☕"
+  ],
+  "id_categoria": 5,
+  "id_producto": 37
+},
+{
+  "tag": "frappes_choco_crunch",
+  "patterns": [
+    "¿Qué contiene nuestro Frappe Choco crunch?",
+    "¿Qué materias primas se utilizan para generar nuestro Frappe Choco crunch?",
+    "¿Qué insumos se necesitan para preparar nuestro Frappe Choco crunch?"
+  ],
+  "responses": [
+    "Nuestro Frappes Choco crunch se prepara con 7 gr de Café, 80 mL de Sirope de Chocolate, 350 gr de Hielo, 40 gr de Chantilly, 5 unidades de Galletas Oreo, 250 mL de Leche y 3 unidades de Galletas Oreo. ☕"
+  ],
+  "id_categoria": 5,
+  "id_producto": 38
+},
+{
+  "tag": "frappes_moka",
+  "patterns": [
+    "¿Qué contiene nuestro Frappe Moka?",
+    "¿Qué materias primas se utilizan para generar nuestro Frappe Moka?",
+    "¿Qué insumos se necesitan para preparar nuestro Frappe Moka?"
+  ],
+  "responses": [
+    "Nuestro Frappes Moka se prepara con 7 gr de Café, 80 mL de Sirope de Chocolate, 350 gr de Hielo, 40 gr de Chantilly, 5 unidades de Galletas Oreo, 250 mL de Leche y 60 gr de Cocoa. ☕"
+  ],
+  "id_categoria": 5,
+  "id_producto": 39
+},
+{
+  "tag": "frappes_brownie",
+  "patterns": [
+    "¿Qué contiene nuestro Frappe Brownie?",
+    "¿Qué materias primas se utilizan para generar nuestro Frappe Brownie?",
+    "¿Qué insumos se necesitan para preparar nuestro Frappe Brownie?"
+  ],
+  "responses": [
+    "Nuestro Frappes Brownie se prepara con 7 gr de Café, 80 mL de Sirope de Chocolate, 350 gr de Hielo, 40 gr de Chantilly, 5 unidades de Galletas Oreo, 250 mL de Leche y 1 unidad de Brownie. ☕"
+  ],
+  "id_categoria": 5,
+  "id_producto": 40
+},
+{
+  "tag": "frappes_juan_k",
+  "patterns": [
+    "¿Qué contiene nuestro Frappe Juan K?",
+    "¿Qué materias primas se utilizan para generar nuestro Frappe Juan K?",
+    "¿Qué insumos se necesitan para preparar nuestro Frappe Juan K?"
+  ],
+  "responses": [
+    "Nuestro Frappes Juan K se prepara con 7 gr de Café, 80 mL de Sirope de Chocolate, 350 gr de Hielo, 40 gr de Chantilly, 5 unidades de Galletas Oreo, 240 mL de Leche y 30 mL de Saborizante de Vainilla. ☕"
+  ],
+  "id_categoria": 5,
+  "id_producto": 41
+},
+{
+  "tag": "frappes_macadamia",
+  "patterns": [
+    "¿Qué contiene nuestro Frappe Macadamia?",
+    "¿Qué materias primas se utilizan para generar nuestro Frappe Macadamia?",
+    "¿Qué insumos se necesitan para preparar nuestro Frappe Macadamia?"
+  ],
+  "responses": [
+    "Nuestro Frappes Macadamia se prepara con 7 gr de Café, 80 mL de Sirope de Chocolate, 350 gr de Hielo, 40 gr de Chantilly, 5 unidades de Galletas Oreo, 240 mL de Leche y 30 mL de Saborizante de Macadamia. ☕"
+  ],
+  "id_categoria": 5,
+  "id_producto": 42
+},
+{
+  "tag": "frappes_coco",
+  "patterns": [
+    "¿Qué contiene nuestro Frappe Coco?",
+    "¿Qué materias primas se utilizan para generar nuestro Frappe Coco?",
+    "¿Qué insumos se necesitan para preparar nuestro Frappe Coco?"
+  ],
+  "responses": [
+    "Nuestro Frappes Coco se prepara con 7 gr de Café, 80 mL de Sirope de Chocolate, 350 gr de Hielo, 40 gr de Chantilly, 5 unidades de Galletas Oreo, 240 mL de Leche y 30 mL de Saborizante de Coco. ☕"
+  ],
+  "id_categoria": 5,
+  "id_producto": 43
+},
+{
+  "tag": "frappes_malvaviscos",
+  "patterns": [
+    "¿Qué contiene nuestro Frappe Malvaviscos?",
+    "¿Qué materias primas se utilizan para generar nuestro Frappe Malvaviscos?",
+    "¿Qué insumos se necesitan para preparar nuestro Frappe Malvaviscos?"
+  ],
+  "responses": [
+    "Nuestro Frappes Malvaviscos se prepara con 7 gr de Café, 80 mL de Sirope de Chocolate, 350 gr de Hielo, 40 gr de Chantilly, 5 unidades de Galletas Oreo, 240 mL de Leche, 30 mL de Saborizante de Malvaviscos y 25 gr de Malvaviscos. ☕"
+  ],
+  "id_categoria": 5,
+  "id_producto": 44
+},
+{
+  "tag": "frappes_licor_baileys",
+  "patterns": [
+    "¿Qué contiene nuestro Frappe con licor de Baileys?",
+    "¿Qué materias primas se utilizan para generar nuestro Frappe con licor de Baileys?",
+    "¿Qué insumos se necesitan para preparar nuestro Frappe con licor de Baileys?"
+  ],
+  "responses": [
+    "Nuestro Frappe con licor de Baileys se prepara con 7 gr de Café, 80 mL de Sirope de Chocolate, 350 gr de Hielo, 40 gr de Chantilly, 5 unidades de Galletas Oreo, 240 mL de Leche y 30 mL de Baileys. ☕"
+  ],
+  "id_categoria": 5,
+  "id_producto": 45
+},
+{
+  "tag": "frappes_licor_whisky",
+  "patterns": [
+    "¿Qué contiene nuestro Frappe con licor de Whisky?",
+    "¿Qué materias primas se utilizan para generar nuestro Frappes licor de Whisky?",
+    "¿Qué insumos se necesitan para preparar nuestro Frappe con licor de Whisky?"
+  ],
+  "responses": [
+    "Nuestro Frappe con licor con Whisky se prepara con 7 gr de Café, 80 mL de Sirope de Chocolate, 350 gr de Hielo, 40 gr de Chantilly, 5 unidades de Galletas Oreo, 240 mL de Leche y 30 mL de Whisky. ☕"
+  ],
+  "id_categoria": 5,
+  "id_producto": 46
+},
+{
+  "tag": "frappes_licor_amaretto",
+  "patterns": [
+    "¿Qué contiene nuestro Frappe con licor de Amaretto?",
+    "¿Qué materias primas se utilizan para generar nuestro Frappe con licor de Amaretto?",
+    "¿Qué insumos se necesitan para preparar nuestro Frappe con licor de Amaretto?"
+  ],
+  "responses": [
+    "Nuestro Frappe con licor de Amaretto se prepara con 7 gr de Café, 80 mL de Sirope de Chocolate, 350 gr de Hielo, 40 gr de Chantilly, 5 unidades de Galletas Oreo, 240 mL de Leche y 30 mL de Amaretto. ☕"
+  ],
+  "id_categoria": 5,
+  "id_producto": 47
+},{
+  "tag": "refrescantes_limonada_natural",
+  "patterns": [
+    "¿Qué contiene nuestra limonada Natural?",
+    "¿Qué materias primas se utilizan para generar nuestra Limonada Natural?",
+    "¿Qué insumos se necesitan para preparar nuestra limonada Natural?"
+  ],
+  "responses": [
+    "Nuestra Limonada Natural se prepara con 450 mL de Agua, 2 unidades de Limón, 40 gr de Hielo y 20 gr de Azúcar. 🧊"
+  ],
+  "id_categoria": 6,
+  "id_producto": 48
+},
+{
+  "tag": "refrescantes_limonada_de_cereza",
+  "patterns": [
+    "¿Qué contiene nuestra limonada de Cereza?",
+    "¿Qué materias primas se utilizan para generar nuestra limonada de Cereza?",
+    "¿Qué insumos se necesitan para preparar nuestra limonada de Cereza?"
+  ],
+  "responses": [
+    "Nuestra Limonada de Cereza se prepara con 420 mL de Agua, 2 unidades de Limón, 40 gr de Hielo, 20 gr de Azúcar, 30 mL de Granadina y 12 gr de Cereza. 🧊"
+  ],
+  "id_categoria": 6,
+  "id_producto": 49
+},
+{
+  "tag": "refrescantes_limonada_de_hierbabuena",
+  "patterns": [
+    "¿Qué contiene nuestra limonada de Hierbabuena?",
+    "¿Qué materias primas se utilizan para generar nuestra limonada de Hierbabuena?",
+    "¿Qué insumos se necesitan para preparar nuestra limonada de Hierbabuena?"
+  ],
+  "responses": [
+    "Nuestra Limonada de Hierbabuena se prepara con 450 mL de Agua, 2 unidades de Limón, 40 gr de Hielo, 20 gr de Azúcar y 40 gr de Hierbabuena. 🧊"
+  ],
+  "id_categoria": 6,
+  "id_producto": 50
+},
+{
+  "tag": "refrescantes_limonada_de_mango",
+  "patterns": [
+    "¿Qué contiene nuestra limonada de Mango?",
+    "¿Qué materias primas se utilizan para generar nuestra limonada de Mango?",
+    "¿Qué insumos se necesitan para preparar nuestra limonada de Mango?"
+  ],
+  "responses": [
+    "Nuestra Limonada de Mango se prepara con 450 mL de Agua, 2 unidades de Limón, 40 gr de Hielo, 20 gr de Azúcar y 100 gr de Pulpa de Mango. 🧊"
+  ],
+  "id_categoria": 6,
+  "id_producto": 51
+},
+{
+  "tag": "refrescantes_limonada_de_coco",
+  "patterns": [
+    "¿Qué contiene nuestra Limonada de Coco?",
+    "¿Qué materias primas se utilizan para generar nuestra Limonada de Coco?",
+    "¿Qué insumos se necesitan para preparar nuestra Limonada de Coco?"
+  ],
+  "responses": [
+    "Nuestra Limonada de Coco se prepara con 420 mL de Agua, 2 unidades de Limón, 40 gr de Hielo, 20 gr de Azúcar y 30 mL de Saborizante de Coco. 🧊"
+  ],
+  "id_categoria": 6,
+  "id_producto": 52
+},
+{
+  "tag": "refrescantes_granizado_de_cereza",
+  "patterns": [
+    "¿Qué contiene nuestro Granizado de Cereza?",
+    "¿Qué materias primas se utilizan para generar nuestro Granizado de Cereza?",
+    "¿Qué insumos se necesitan para preparar nuestro  Granizado de Cereza?"
+  ],
+  "responses": [
+    "Nuestro Granizado de Cereza se prepara con 150 mL de Agua, 15 gr de Hielo y 100 mL de Granadina. 🧊"
+  ],
+  "id_categoria": 6,
+  "id_producto": 53
+},
+{
+  "tag": "refrescantes_granizado_de_granadina",
+  "patterns": [
+    "¿Qué contiene nuestro Granizado de Granadina?",
+    "¿Qué materias primas se utilizan para generar nuestro Granizado de Granadina?",
+    "¿Qué insumos se necesitan para preparar nuestro Granizado de Granadina?"
+  ],
+  "responses": [
+    "Nuestro Granizado de Granadina se prepara con 90 mL de Agua, 15 gr de Hielo y 60 mL de Saborizante de Vainilla. 🧊"
+  ],
+  "id_categoria": 6,
+  "id_producto": 54
+},
+{
+  "tag": "refrescantes_granizado_de_fresa",
+  "patterns": [
+    "¿Qué contiene nuestro Granizado de Fresa?",
+    "¿Qué materias primas se utilizan para generar nuestro  Granizado de Fresa?",
+    "¿Qué insumos se necesitan para preparar nuestro  Granizado de Fresa?"
+  ],
+  "responses": [
+    "Nuestro Granizado de Fresa se prepara con 150 mL de Agua, 15 gr de Hielo y 7 unidades de Fresa. 🧊"
+  ],
+  "id_categoria": 6,
+  "id_producto": 55
+},
+{
+  "tag": "refrescantes_granizado_de_mango",
+  "patterns": [
+    "¿Qué contiene nuestro Granizado de Mango?",
+    "¿Qué materias primas se utilizan para generar nuestro  Granizado de Mango?",
+    "¿Qué insumos se necesitan para preparar nuestro Granizado de Mango?"
+  ],
+  "responses": [
+    "Nuestro Granizado de Mango se prepara con 150 mL de Agua, 15 gr de Hielo y 100 gr de Pulpa de Mango. 🧊"
+  ],
+  "id_categoria": 6,
+  "id_producto": 56
+},
+{
+  "tag": "refrescantes_granizado_de_maracuya",
+  "patterns": [
+    "¿Qué contiene nuestro Granizado de Maracuya?",
+    "¿Qué materias primas se utilizan para generar nuestro Granizado de Maracuya?",
+    "¿Qué insumos se necesitan para preparar nuestro Granizado de Maracuyá?"
+  ],
+  "responses": [
+    "Nuestro Granizado de Maracuyá se prepara con 150 mL de Agua, 15 gr de Hielo y 3 unidades de Maracuyá. 🧊"
+  ],
+  "id_categoria": 6,
+  "id_producto": 57
+},
+{
+  "tag": "refrescantes_sodas_italianas",
+  "patterns": [
+    "¿Qué contiene nuestra Soda italiana?",
+    "¿Qué materias primas se utilizan para generar nuestra Soda italiana?",
+    "¿Qué insumos se necesitan para preparar nuestra Soda italiana?"
+  ],
+  "responses": [
+    "Nuestra Soda italiana se prepara con 1 unidad de Manzana, 2 unidades de Fresa, 30 gr de Pulpa de Cereza, 30 mL de Granadina, 30 gr de Cereza, 60 gr de Hielo y 390 mL de Soda. 🧊"
+  ],
+  "id_categoria": 6,
+  "id_producto": 58
+},
+{
+  "tag": "refrescantes_jugo_de_mango_en_agua",
+  "patterns": [
+    "¿Qué contiene nuestro Jugo de Mango?",
+    "¿Qué materias primas se utilizan para generar nuestro Jugo de Mango?",
+    "¿Qué insumos se necesitan para preparar nuestro  Jugo de Mango?"
+  ],
+  "responses": [
+    "Nuestro  Jugo de Mango se prepara con 40 gr de Hielo, 20 gr de Azúcar, 420 mL de Agua y 100 gr de Pulpa de Mango. 🧊"
+  ],
+  "id_categoria": 6,
+  "id_producto": 59
+},
+{
+  "tag": "refrescantes_jugo_de_cereza_en_agua",
+  "patterns": [
+    "¿Qué contiene nuestro Jugo de Cereza?",
+    "¿Qué materias primas se utilizan para generar nuestro Jugo de Cereza?",
+    "¿Qué insumos se necesitan para preparar nuestro Jugo de Cereza?"
+  ],
+  "responses": [
+    "Nuestro Jugo de Cereza se prepara con 40 gr de Hielo, 20 gr de Azúcar, 420 mL de Agua y 100 gr de Pulpa de Cereza. 🧊"
+  ],
+  "id_categoria": 6,
+  "id_producto": 60
+},{
+  "tag": "refrescantes_jugo_de_granadina_en_agua",
+  "patterns": [
+    "¿Qué contiene nuestro Jugo de Granadina?",
+    "¿Qué materias primas se utilizan para generar nuestro Jugo de Granadina?",
+    "¿Qué insumos se necesitan para preparar nuestro Jugo de Granadina?"
+  ],
+  "responses": [
+    "Nuestro Jugo de Granadina se prepara con 40 gr de Hielo, 20 gr de Azúcar, 420 mL de Agua y 100 gr de Pulpa de Granadina. 🧊"
+  ],
+  "id_categoria": 6,
+  "id_producto": 61
+},
+{
+  "tag": "refrescantes_jugo_de_manzana_en_agua",
+  "patterns": [
+    "¿Qué contiene nuestro Jugo de Manzana?",
+    "¿Qué materias primas se utilizan para generar nuestro Jugo de Manzana?",
+    "¿Qué insumos se necesitan para preparar nuestro  Jugo de Manzana?"
+  ],
+  "responses": [
+    "Nuestro Jugo de Manzana se prepara con 40 gr de Hielo, 20 gr de Azúcar, 420 mL de Agua y 100 gr de Pulpa de Manzana. 🧊"
+  ],
+  "id_categoria": 6,
+  "id_producto": 62
+},
+{
+  "tag": "refrescantes_jugo_de_fresa_en_agua",
+  "patterns": [
+    "¿Qué contiene nuestro Jugo de Fresa?",
+    "¿Qué materias primas se utilizan para generar nuestro Jugo de Fresa?",
+    "¿Qué insumos se necesitan para preparar nuestro Jugo de Fresa ?"
+  ],
+  "responses": [
+    "Nuestro Jugo de Fresa se prepara con 40 gr de Hielo, 20 gr de Azúcar, 420 mL de Agua y 100 gr de Pulpa de Fresa. 🧊"
+  ],
+  "id_categoria": 6,
+  "id_producto": 63
+},
+{
+  "tag": "refrescantes_jugo_de_mango_en_leche",
+  "patterns": [
+    "¿Qué contiene nuestro  Jugo de Mango en leche?",
+    "¿Qué materias primas se utilizan para generar nuestro Jugo de Mango en leche?",
+    "¿Qué insumos se necesitan para preparar nuestro Jugo de Mango en leche?"
+  ],
+  "responses": [
+    "Nuestro  Jugo de Mango en leche se prepara con 40 gr de Hielo, 20 gr de Azúcar, 420 mL de Leche y 100 gr de Pulpa de Mango. 🧊"
+  ],
+  "id_categoria": 6,
+  "id_producto": 64
+},
+{
+  "tag": "refrescantes_jugo_de_cereza_en_leche",
+  "patterns": [
+    "¿Qué contiene nuestro Jugo de Cereza en leche?",
+    "¿Qué materias primas se utilizan para generar nuestro  Jugo de Cereza en leche?",
+    "¿Qué insumos se necesitan para preparar nuestro  Jugo de Cereza en leche?"
+  ],
+  "responses": [
+    "Nuestro  Jugo de Cereza en leche se prepara con 40 gr de Hielo, 20 gr de Azúcar, 420 mL de Leche y 100 gr de Pulpa de Cereza. 🧊"
+  ],
+  "id_categoria": 6,
+  "id_producto": 65
+},
+{
+  "tag": "refrescantes_jugo_de_granadina_en_leche",
+  "patterns": [
+    "¿Qué contiene nuestro  Jugo de Granadina en leche?",
+    "¿Qué materias primas se utilizan para generar nuestro Jugo de Granadina en leche?",
+    "¿Qué insumos se necesitan para preparar nuestro Jugo de Granadina en leche?"
+  ],
+  "responses": [
+    "Nuestro Jugo de Granadina en leche se prepara con 40 gr de Hielo, 20 gr de Azúcar, 420 mL de Leche y 100 gr de Pulpa de Granadina. 🧊"
+  ],
+  "id_categoria": 6,
+  "id_producto": 66
+},
+{
+  "tag": "refrescantes_jugo_de_manzana_en_leche",
+  "patterns": [
+    "¿Qué contiene nuestro Jugo de Manzana en leche?",
+    "¿Qué materias primas se utilizan para generar nuestro Jugo de Manzana en leche?",
+    "¿Qué insumos se necesitan para preparar nuestro Jugo de Manzana en leche?"
+  ],
+  "responses": [
+    "Nuestro Jugo de Manzana en leche se prepara con 40 gr de Hielo, 20 gr de Azúcar, 420 mL de Leche y 100 gr de Pulpa de Manzana. 🧊"
+  ],
+  "id_categoria": 6,
+  "id_producto": 67
+},
+{
+  "tag": "refrescantes_jugo_de_fresa_en_leche",
+  "patterns": [
+    "¿Qué contiene nuestro Jugo de Fresa en leche?",
+    "¿Qué materias primas se utilizan para generar nuestro Jugo de Fresa en leche?",
+    "¿Qué insumos se necesitan para preparar nuestro Jugo de Fresa en leche?"
+  ],
+  "responses": [
+    "Nuestro Jugo de Fresa en leche se prepara con 40 gr de Hielo, 20 gr de Azúcar, 420 mL de Leche y 100 gr de Pulpa de Fresa. 🧊"
+  ],
+  "id_categoria": 6,
+  "id_producto": 68
+},
+{
+  "tag": "refrescantes_mojito_sin_licor",
+  "patterns": [
+    "¿Qué contiene nuestro Mojito sin licor?",
+    "¿Qué materias primas se utilizan para generar nuestro Mojito sin licor?",
+    "¿Qué insumos se necesitan para preparar nuestro Mojito sin licor?"
+  ],
+  "responses": [
+    "Nuestro Mojito sin licor se prepara con 1 unidad de Limón, 40 gr de Azúcar, 40 gr de Hierbabuena, 60 gr de Hielo y 360 mL de Soda. 🧊"
+  ],
+  "id_categoria": 6,
+  "id_producto": 69
+},
+{
+  "tag": "refrescantes_malteada",
+  "patterns": [
+    "¿Qué contiene nuestro Malteada?",
+    "¿Qué materias primas se utilizan para generar nuestro Malteada?",
+    "¿Qué insumos se necesitan para preparar nuestro Malteada?"
+  ],
+  "responses": [
+    "Nuestro Malteada se prepara con 420 gr de Helado de Vainilla, 40 gr de Chantilly, 3 unidades de Galletas Oreo y 1 unidad de Brownie. 🧊"
+  ],
+  "id_categoria": 6,
+  "id_producto": 70
+},
+{
+  "tag": "refrescantes_milo_frio",
+  "patterns": [
+    "¿Qué contiene nuestro Milo frío?",
+    "¿Qué materias primas se utilizan para generar nuestro Milo frío?",
+    "¿Qué insumos se necesitan para preparar nuestro Milo frío?"
+  ],
+  "responses": [
+    "Nuestro Milo frío se prepara con 40 gr de Milo, 60 gr de Hielo y 360 mL de Leche. 🧊"
+  ],
+  "id_categoria": 6,
+  "id_producto": 71
+},
+{
+  "tag": "refrescantes_milo_frappe",
+  "patterns": [
+    "¿Qué contiene nuestro Milo frappe?",
+    "¿Qué materias primas se utilizan para generar nuestro Milo frappe?",
+    "¿Qué insumos se necesitan para preparar nuestro Milo frappe?"
+  ],
+  "responses": [
+    "Nuestro Refrescantes Milo frappe se prepara con 80 gr de Milo, 80 gr de Hielo, 250 mL de Leche, 40 gr de Chantilly, 40 mL de Sirope de Chocolate y 5 unidades de Galletas Oreo. 🧊"
+  ],
+  "id_categoria": 6,
+  "id_producto": 72
+},
+{
+  "tag": "refrescantes_bola_de_helado",
+  "patterns": [
+    "¿Qué contiene nuestra Bola de helado?",
+    "¿Qué materias primas se utilizan para generar nuestra Bola de helado?",
+    "¿Qué insumos se necesitan para preparar nuestra Bola de helado?"
+  ],
+  "responses": [
+    "Nuestra Bola de helado se prepara con 80 gr de Helado de Vainilla. 🍨"
+  ],
+  "id_categoria": 6,
+  "id_producto": 73
+},{
+  "tag": "bebidas_especiales_cafe_euforia",
+  "patterns": [
+    "¿Qué contiene nuestro Cafe Euforia?",
+    "¿Qué materias primas se utilizan para generar nuestro Cafe Euforia?",
+    "¿Qué insumos se necesitan para preparar nuestro Cafe Euforia?"
+  ],
+  "responses": [
+    "Nuestro Café Euforia se prepara con 14 gr de Café, 30 mL de Amaretto, 20 gr de Leche Condensada, 40 gr de Chantilly y 30 mL de Agua. ☕"
+  ],
+  "id_categoria": 7,
+  "id_producto": 74
+},
+{
+  "tag": "bebidas_especiales_cafe_irlandes",
+  "patterns": [
+    "¿Qué contiene nuestro Cafe Irlandés?",
+    "¿Qué materias primas se utilizan para generar nuestro Cafe Irlandés?",
+    "¿Qué insumos se necesitan para preparar nuestro Cafe Irlandés?"
+  ],
+  "responses": [
+    "Nuestro Café Irlandés se prepara con 14 gr de Café, 30 mL de Whisky, 20 gr de Azúcar, 40 gr de Chantilly y 30 mL de Agua. ☕"
+  ],
+  "id_categoria": 7,
+  "id_producto": 75
+},
+{
+  "tag": "bebidas_especiales_cafe_cubano",
+  "patterns": [
+    "¿Qué contiene nuestro Cafe Cubano?",
+    "¿Qué materias primas se utilizan para generar nuestro Cafe Cubano?",
+    "¿Qué insumos se necesitan para preparar nuestro Bebidas Especiales Café Cubano?"
+  ],
+  "responses": [
+    "Nuestro Cafe Cubano se prepara con 14 gr de Café, 30 mL de Baileys, 40 gr de Chantilly y 30 mL de Agua. ☕"
+  ],
+  "id_categoria": 7,
+  "id_producto": 76
+},
+{
+  "tag": "bebidas_especiales_affogato_baileys",
+  "patterns": [
+    "¿Qué contiene nuestro affogato de Baileys?",
+    "¿Qué materias primas se utilizan para generar nuestro Affogato de Baileys?",
+    "¿Qué insumos se necesitan para preparar nuestro Affogato de Baileys?"
+  ],
+  "responses": [
+    "Nuestro Affogato de Baileys se prepara con 7 gr de Café, 30 mL de Baileys, 40 gr de Chantilly, 30 mL de Agua y 420 gr de Helado de Vainilla. ☕🍨"
+  ],
+  "id_categoria": 7,
+  "id_producto": 77
+},
+{
+  "tag": "bebidas_especiales_affogato_amaretto",
+  "patterns": [
+    "¿Qué contiene nuestro Affogato de Amaretto?",
+    "¿Qué materias primas se utilizan para generar nuestro Affogato de Amaretto?",
+    "¿Qué insumos se necesitan para preparar nuestro Affogato de Amaretto?"
+  ],
+  "responses": [
+    "Nuestro Affogato de Amaretto se prepara con 7 gr de Café, 30 mL de Amaretto, 40 gr de Chantilly, 30 mL de Agua y 420 gr de Helado de Vainilla. ☕🍨"
+  ],
+  "id_categoria": 7,
+  "id_producto": 78
+},{
+  "tag": "cervezas_club_colombia",
+  "patterns": [
+    "Como se sirve nuestra cerveza Club Colombia?",
+    "¿Qué contiene nuestra cerveza Club Colombia?",
+    "¿Qué materias primas se utilizan para generar nuestra cerveza Club Colombia?",
+    "¿Qué insumos se necesitan para preparar nuestra Cerveza Club Colombia?"
+  ],
+  "responses": [
+    "Nuestra Cerveza Club Colombia se sirve con 1 unidad de Club Colombia. 🍺"
+  ],
+  "id_categoria": 8,
+  "id_producto": 79
+},
+{
+  "tag": "cervezas_heineken",
+  "patterns": [
+    "Como se sirve nuestra cerveza Heineken?",
+    "¿Qué contiene nuestra Cerveza Heineken?",
+    "¿Qué materias primas se utilizan para generar nuestra Cerveza Heineken?",
+    "¿Qué insumos se necesitan para preparar nuestra Cerveza Heineken?"
+  ],
+  "responses": [
+    "Nuestra Cerveza Heineken se sirve con 1 unidad de Heineken. 🍺"
+  ],
+  "id_categoria": 8,
+  "id_producto": 80
+},
+{
+  "tag": "cervezas_corona",
+  "patterns": [
+    "Como se sirve nuestra cerveza corona?",
+    "¿Qué contiene nuestra Cerveza Corona?",
+    "¿Qué materias primas se utilizan para generar nuestra Cerveza Corona?",
+    "¿Qué insumos se necesitan para preparar nuestra Cerveza Corona?"
+  ],
+  "responses": [
+    "Nuestra Cerveza Corona se sirve con 1 unidad de Corona. 🍺"
+  ],
+  "id_categoria": 8,
+  "id_producto": 81
+},
+{
+  "tag": "cervezas_tres_cordilleras",
+  "patterns": [
+    "Como se sirve nuestra cerveza tres cordilleras?",
+    "¿Qué contiene nuestra Cerveza Tres Cordilleras?",
+    "¿Qué materias primas se utilizan para generar nuestra Cerveza Tres Cordilleras?",
+    "¿Qué insumos se necesitan para preparar nuestra Cerveza Tres Cordilleras?"
+  ],
+  "responses": [
+    "Nuestra Cerveza Tres Cordilleras se sirve con 1 unidad de Tres Cordilleras. 🍺"
+  ],
+  "id_categoria": 8,
+  "id_producto": 82
+},{
+  "tag": "tragos_black_and_white",
+  "patterns": [
+    "como se sirve nuestro Black and white?",
+    "¿Qué contiene nuestro Trago Black and White?",
+    "¿Qué materias primas se utilizan para generar nuestro Trago Black & White?",
+    "¿Qué insumos se necesitan para preparar nuestro Trago Black & White?"
+  ],
+  "responses": [
+    "Nuestro Trago Black & White se sirve con 40 mL de Black & White. 🥃"
+  ],
+  "id_categoria": 9,
+  "id_producto": 83
+},
+{
+  "tag": "tragos_baileys",
+  "patterns": [
+    "como se sirve nuestro baileys?",
+    "¿Qué contiene nuestro Baileys?",
+    "¿Qué materias primas se utilizan para generar nuestro Trago Baileys?",
+    "¿Qué insumos se necesitan para preparar nuestro Trago Baileys?"
+  ],
+  "responses": [
+    "Nuestro Trago Baileys se sirve con 50 mL de Baileys. 🥃"
+  ],
+  "id_categoria": 9,
+  "id_producto": 84
+},
+{
+  "tag": "tragos_aguardiente",
+  "patterns": [
+    "como se sirve nuestro aguardiente?",
+    "¿Qué contiene nuestro Aguardiente?",
+    "¿Qué materias primas se utilizan para generar nuestro Aguardiente?",
+    "¿Qué insumos se necesitan para preparar nuestro Trago Aguardiente?"
+  ],
+  "responses": [
+    "Nuestro Aguardiente se sirve con 40 mL de Aguardiente. 🥃"
+  ],
+  "id_categoria": 9,
+  "id_producto": 85
+},
+{
+  "tag": "tragos_tequila",
+  "patterns": [
+    "como se sirve nuestro Tequila?",
+    "¿Qué contiene nuestro Tequila?",
+    "¿Qué materias primas se utilizan para generar nuestro Tragos Tequila?",
+    "¿Qué insumos se necesitan para preparar nuestro Tragos Tequila?"
+  ],
+  "responses": [
+    "Nuestro Tequila se sirve con 45 mL de Tequila. 🥃"
+  ],
+  "id_categoria": 9,
+  "id_producto": 86
+},{
+  "tag": "cocteles_mojito_cubano",
+  "patterns": [
+    "¿Qué contiene nuestro Mojito Cubano?",
+    "¿Qué contiene nuestro coctel Mojito Cubano?",
+    "¿Qué materias primas se utilizan para generar nuestro Mojito Cubano?",
+    "¿Qué insumos se necesitan para preparar nuestro Cocteles Mojito Cubano?"
+  ],
+  "responses": [
+    "Nuestro Mojito Cubano se prepara con 300 mL de Tequila, 40 gr de Hierbabuena, 20 gr de Azúcar, 1 unidad de Limón y 60 gr de Hielo. 🍹"
+  ],
+  "id_categoria": 10,
+  "id_producto": 87
+},
+{
+  "tag": "cocteles_mojito_maracuya",
+  "patterns": [
+    "¿Qué contiene nuestro coctel Mojito de Maracuyá?",
+    "¿Qué materias primas se utilizan para generar nuestro  Mojito de Maracuyá?",
+    "¿Qué insumos se necesitan para preparar nuestro Coctel Mojito de Maracuyá?"
+  ],
+  "responses": [
+    "Nuestro Mojito de Maracuyá se prepara con 300 mL de Tequila, 40 gr de Hierbabuena, 20 gr de Azúcar, 1 unidad de Limón, 1 unidad de Maracuyá y 60 gr de Hielo. 🍹"
+  ],
+  "id_categoria": 10,
+  "id_producto": 88
+},
+{
+  "tag": "cocteles_margarita",
+  "patterns": [
+    "¿Qué contiene nuestro Coctel Margarita?",
+    "¿Qué materias primas se utilizan para generar nuestro Coctel Margarita?",
+    "¿Qué insumos se necesitan para preparar nuestro Coctel Margarita?"
+  ],
+  "responses": [
+    "Nuestro Coctel Margarita se prepara con 150 mL de Aguardiente, 150 mL de Triple C, 1 unidad de Limón y 60 gr de Hielo. 🍹"
+  ],
+  "id_categoria": 10,
+  "id_producto": 89
+},
+{
+  "tag": "cocteles_daiquiri",
+  "patterns": [
+    "¿Qué contiene nuestro Coctel daiquiri?",
+    "¿Qué materias primas se utilizan para generar nuestro Coctel Daiquiri?",
+    "¿Qué insumos se necesitan para preparar nuestro Coctel Daiquiri?"
+  ],
+  "responses": [
+    "Nuestro Coctel Daiquiri se prepara con 100 gr de Pulpa de Fresa, 480 mL de Tequila, 1 unidad de Limón, 20 gr de Azúcar y 60 gr de Hielo. 🍹"
+  ],
+  "id_categoria": 10,
+  "id_producto": 90
+},
+{
+  "tag": "cocteles_caipiroska_citrica",
+  "patterns": [
+    "¿Qué contiene nuestro Coctel caipiroska Cítrica?",
+    "¿Qué materias primas se utilizan para generar nuestro Coctel Caipiroska Cítrica?",
+    "¿Qué insumos se necesitan para preparar nuestro Coctel Caipiroska Cítrica?"
+  ],
+  "responses": [
+    "Nuestro Coctel Caipiroska Cítrica se prepara con 240 mL de Vodka, 20 gr de Azúcar, 1 unidad de Limón, 300 mL de Jugo de Naranja y 60 gr de Hielo. 🍹"
+  ],
+  "id_categoria": 10,
+  "id_producto": 91
+},
+{
+  "tag": "cocteles_padrino",
+  "patterns": [
+    "¿Qué contiene nuestro Coctel padrino?",
+    "¿Qué materias primas se utilizan para generar nuestro Coctel Padrino?",
+    "¿Qué insumos se necesitan para preparar nuestro Coctel Padrino?"
+  ],
+  "responses": [
+    "Nuestro Coctel Padrino se prepara con 150 mL de Amaretto, 240 mL de Whisky y 60 gr de Hielo. 🍹"
+  ],
+  "id_categoria": 10,
+  "id_producto": 92
+},
+{
+  "tag": "cocteles_tequila_sunrise",
+  "patterns": [
+    "¿Qué contiene nuestro Coctel Tequila Sunrise?",
+    "¿Qué materias primas se utilizan para generar nuestro Coctel Tequila Sunrise?",
+    "¿Qué insumos se necesitan para preparar nuestro Coctel Tequila Sunrise?"
+  ],
+  "responses": [
+    "Nuestro Coctel Tequila Sunrise se prepara con 240 mL de Aguardiente, 60 mL de Granadina, 300 mL de Jugo de Naranja y 60 gr de Hielo. 🍹"
+  ],
+  "id_categoria": 10,
+  "id_producto": 93
+},
+{
+  "tag": "cocteles_cabeza_de_jabali",
+  "patterns": [
+    "que contiene nuestro cabeza de jabali",
+    "Que contiene nuestro Cabeza de Jabalí?",
+    "¿Qué contiene nuestro Coctel Cabeza de Jabalí?",
+    "¿Qué materias primas se utilizan para generar nuestro Coctel Cabeza de Jabalí?",
+    "¿Qué insumos se necesitan para preparar nuestro Coctel Cabeza de Jabalí?"
+  ],
+  "responses": [
+    "Nuestro Coctel Cabeza de Jabalí se prepara con 90 mL de Tequila, 90 mL de Vodka, 90 mL de Aguardiente, 150 mL de Triple C, 150 mL de Jugo de Naranja, 120 mL de Granadina y 60 gr de Hielo. 🍹"
+  ],
+  "id_categoria": 10,
+  "id_producto": 94
+},{
+  "tag": "comestibles_empanada_argentina",
+  "patterns": [
+    "Como se sirve nuestra empanada argentina",
+    "¿Qué contiene nuestra empanada Argentina?",
+    "¿Qué materias primas se utilizan para generar nuestra Empanada Argentina?",
+    "¿Qué insumos se necesitan para preparar nuestra Empanada Argentina?"
+  ],
+  "responses": [
+    "Nuestra Empanada Argentina se sirve con 1 unidad de Empanada Argentina. 🥟"
+  ],
+  "id_categoria": 11,
+  "id_producto": 95
+},
+{
+  "tag": "comestibles_empanada_pollo",
+  "patterns": [
+    "Como se sirve nuestra empanada de pollo",
+    "¿Qué contiene nuestra Empanada de Pollo?",
+    "¿Qué materias primas se utilizan para generar nuestra Empanada de Pollo?",
+    "¿Qué insumos se necesitan para preparar nuestra Empanada de Pollo?"
+  ],
+  "responses": [
+    "Nuestra Empanada de Pollo se sirve con 1 unidad de Empanada de Pollo. 🥟"
+  ],
+  "id_categoria": 11,
+  "id_producto": 96
+},
+{
+  "tag": "comestibles_empanada_pollo_jamon_queso",
+  "patterns": [
+    "Como se sirve nuestra empanada de pollo jamon y queso",
+    "¿Qué contiene nuestra Empanada de Pollo, Jamón y Queso?",
+    "¿Qué materias primas se utilizan para generar nuestra Empanada de Pollo, Jamón y Queso?",
+    "¿Qué insumos se necesitan para preparar nuestra Empanada de Pollo, Jamón y Queso?"
+  ],
+  "responses": [
+    "Nuestra Empanada de Pollo, Jamón y Queso se sirve con 1 unidad de Empanada de Pollo, Jamón y Queso. 🥟"
+  ],
+  "id_categoria": 11,
+  "id_producto": 97
+},
+{
+  "tag": "comestibles_torta_red_velvet",
+  "patterns": [
+    "Como se sirve nuestra torta red velvet",
+    "¿Qué contiene nuestra Torta Red Velvet?",
+    "¿Qué materias primas se utilizan para generar nuestra Torta Red Velvet?",
+    "¿Qué insumos se necesitan para preparar nuestra Torta Red Velvet?"
+  ],
+  "responses": [
+    "Nuestra Torta Red Velvet se sirve con 1 unidad de Torta Red Velvet. 🍰"
+  ],
+  "id_categoria": 11,
+  "id_producto": 98
+},
+{
+  "tag": "comestibles_torta_chocolate",
+  "patterns": [
+    "Como se sirve nuestra torta de chocolate",
+    "¿Qué contiene nuestra Torta de Chocolate?",
+    "¿Qué materias primas se utilizan para generar nuestra Torta de Chocolate?",
+    "¿Qué insumos se necesitan para preparar nuestra Torta de Chocolate?"
+  ],
+  "responses": [
+    "Nuestra Torta de Chocolate se sirve con 1 unidad de Torta de Chocolate. 🍫🍰"
+  ],
+  "id_categoria": 11,
+  "id_producto": 99
+},
+{
+  "tag": "comestibles_torta_zanahoria",
+  "patterns": [
+    "Como se sirve nuestra torta de  zanahoria",
+    "¿Qué contiene nuestra Torta de Zanahoria?",
+    "¿Qué materias primas se utilizan para generar nuestra Torta de Zanahoria?",
+    "¿Qué insumos se necesitan para preparar nuestra Torta de Zanahoria?"
+  ],
+  "responses": [
+    "Nuestra Torta de Zanahoria se sirve con 1 unidad de Torta de Zanahoria. 🥕🍰"
+  ],
+  "id_categoria": 11,
+  "id_producto": 100
+},
+{
+  "tag": "comestibles_palitos_de_queso",
+  "patterns": [
+    "Como se sirve nuestro palito de queso",
+    "¿Qué contiene nuestro Palito de Queso?",
+    "¿Qué materias primas se utilizan para generar nuestro Palito de Queso?",
+    "¿Qué insumos se necesitan para preparar nuestro Palito de Queso?"
+  ],
+  "responses": [
+    "Nuestro Palito de Queso se sirve con 1 unidad de Palito de Queso. 🧀"
+  ],
+  "id_categoria": 11,
+  "id_producto": 101
+},
+{
+  "tag": "comestibles_pastel_de_pollo",
+  "patterns": [
+    "Como se sirve nuestro pastel de pollo",
+    "¿Qué contiene nuestro Pastel de Pollo?",
+    "¿Qué materias primas se utilizan para generar nuestro Pastel de Pollo?",
+    "¿Qué insumos se necesitan para preparar nuestro Pastel de Pollo?"
+  ],
+  "responses": [
+    "Nuestro Pastel de Pollo se sirve con 1 unidad de Pastel de Pollo. 🥧🐔"
+  ],
+  "id_categoria": 11,
+  "id_producto": 102
+},
+{
+  "tag": "comestibles_pastel_de_carne",
+  "patterns": [
+    "Como se sirve nuestro pastel de carne",
+    "¿Qué contiene nuestro Pastel de Carne?",
+    "¿Qué materias primas se utilizan para generar nuestro Pastel de Carne?",
+    "¿Qué insumos se necesitan para preparar nuestro Pastel de Carne?"
+  ],
+  "responses": [
+    "Nuestro Pastel de Carne se sirve con 1 unidad de Pastel de Carne. 🥧🥩"
+  ],
+  "id_categoria": 11,
+  "id_producto": 103
+},
+{
+  "tag": "comestibles_pastel_de_bocadillo",
+  "patterns": [
+    "Como se sirve nuestro pastel de bocadillo",
+    "¿Qué contiene nuestro Pastel de Bocadillo?",
+    "¿Qué materias primas se utilizan para generar nuestro Pastel de Bocadillo?",
+    "¿Qué insumos se necesitan para preparar nuestro Pastel de Bocadillo?"
+  ],
+  "responses": [
+    "Nuestro Pastel de Bocadillo se sirve con 1 unidad de Pastel de Bocadillo. 🥧🍓"
+  ],
+  "id_categoria": 11,
+  "id_producto": 104
+},
+{
+  "tag": "comestibles_croissant_de_almendras",
+  "patterns": [
+    "como se sirve nuestro croissant de almendras?",
+    "¿Qué contiene nuestro Croissant de Almendras?",
+    "¿Qué materias primas se utilizan para generar nuestro Croissant de Almendras?",
+    "¿Qué insumos se necesitan para preparar nuestro Croissant de Almendras?"
+  ],
+  "responses": [
+    "Nuestro Croissant de Almendras se sirve con 1 unidad de Croissant de Almendras. 🥐"
+  ],
+  "id_categoria": 11,
+  "id_producto": 105
+}
+
+
+
+
+
+]
+    
+    
+
+  
+}
