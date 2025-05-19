@@ -11,6 +11,12 @@ from keras.models import load_model
 from conexion import cursor, conn
 from rapidfuzz import process, fuzz
 
+# Descargar 'punkt' solo si no está disponible
+try:
+    nltk.data.find("tokenizers/punkt")
+except LookupError:
+    nltk.download("punkt")
+
 lemmatizer = WordNetLemmatizer()
 
 # Cargar intents
@@ -161,7 +167,7 @@ def consultar_materia_prima_por_vencer(mensaje_usuario=None, dias_default=30):
         resultados = cursor.fetchall()
 
         if not resultados:
-            return f"No hay materias primas que venzan en los próximos {dias} días."
+            return f"No hay materias primas que vencan en los próximos {dias} días."
 
         respuesta = f"🧾 Materias primas que vencen en los próximos {dias} días:\n"
         for fila in resultados:
