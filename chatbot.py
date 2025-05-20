@@ -11,8 +11,7 @@ from tensorflow.keras.models import load_model
 from conexion import cursor, conn
 from rapidfuzz import process, fuzz
 
-
-# Descargar 'punkt' solo si no está disponible
+# Descargar 'punkt' si no está disponible
 try:
     nltk.data.find("tokenizers/punkt")
 except LookupError:
@@ -37,7 +36,7 @@ cursor.execute("SELECT id_producto, nombre_producto FROM productos;")
 productos_db = cursor.fetchall()
 nombres_db = [nombre.lower() for _, nombre in productos_db]
 
-# NLP
+# --- Funciones NLP ---
 
 def clean_up_sentence(sentence):
     sentence_words = nltk.word_tokenize(sentence)
@@ -81,7 +80,7 @@ def get_response(intents_list, intents_json, mensaje_usuario=None):
 
     return "Lo siento, no entendí eso."
 
-# Extraer productos y cantidades
+# --- Funciones auxiliares ---
 
 def extraer_productos_usuario(mensaje):
     mensaje = mensaje.lower().replace(" y ", ",").replace(".", "")
@@ -105,8 +104,6 @@ def extraer_productos_usuario(mensaje):
     productos_final = [(cantidad, correcciones.get(nombre, nombre)) for cantidad, nombre in productos_final]
     return productos_final
 
-# Fuzzy matching para IDs
-
 def obtener_id_producto(nombre_producto):
     mejor = process.extractOne(nombre_producto.lower(), nombres_db, scorer=fuzz.token_sort_ratio)
     if mejor and mejor[1] >= 80:
@@ -116,10 +113,13 @@ def obtener_id_producto(nombre_producto):
                 return id_prod
     return None
 
-# Registro de venta
+# --- Función principal para registrar ventas ---
 
 def ejecutar_registro_venta(mensaje):
+    print(f"DEBUG - Mensaje recibido para venta: {mensaje}")
     productos = extraer_productos_usuario(mensaje)
+    print(f"DEBUG - Productos extraidos: {productos}")
+    
     if not productos:
         return "⚠️ No se pudieron extraer los productos correctamente."
 
@@ -132,29 +132,29 @@ def ejecutar_registro_venta(mensaje):
         else:
             errores.append(nombre)
 
+    print(f"DEBUG - IDs productos: {ids}, Cantidades: {cantidades}, Errores: {errores}")
+
     if not ids:
         return "⚠️ No se registraron productos válidos para la venta."
 
-    respuesta = ""
-    for i in range(len(ids)):
-        try:
-            cursor.execute("SELECT registrar_venta_productos(%s, %s);", ([ids[i]], [cantidades[i]]))
-            resultado = cursor.fetchone()
-            if resultado and resultado[0]:
-                respuesta += f"✅ {resultado[0]}\n"
-            else:
-                respuesta += f"✅ Venta registrada: {cantidades[i]} unidades de {productos[i][1]} (ID {ids[i]}).\n"
-        except Exception as e:
-            conn.rollback()
-            respuesta += f"❌ Error al registrar venta de {productos[i][1]}: {e}\n"
+    try:
+        cursor.execute("SELECT registrar_venta_productos_formulario(%s, %s);", (ids, cantidades))
+        resultado = cursor.fetchone()
+        conn.commit()
+        print(f"DEBUG - Resultado función SQL: {resultado}")
+        respuesta = resultado[0] if resultado else "⚠️ No se pudo registrar la venta."
+    except Exception as e:
+        conn.rollback()
+        print(f"DEBUG - Error en SQL: {e}")
+        respuesta = f"❌ Error al registrar la venta: {e}"
 
-    conn.commit()
     if errores:
         respuesta += "\n⚠️ No se encontraron los siguientes productos: " + ", ".join(errores)
 
-    return respuesta if respuesta else "⚠️ No se pudo registrar ningún producto."
+    return respuesta
 
-# Consulta de materias primas por vencer
+
+# --- Funciones para otros intents ---
 
 def consultar_materia_prima_por_vencer(mensaje_usuario=None, dias_default=30):
     try:
@@ -168,7 +168,7 @@ def consultar_materia_prima_por_vencer(mensaje_usuario=None, dias_default=30):
         resultados = cursor.fetchall()
 
         if not resultados:
-            return f"No hay materias primas que vencan en los próximos {dias} días."
+            return f"No hay materias primas que vencen en los próximos {dias} días."
 
         respuesta = f"🧾 Materias primas que vencen en los próximos {dias} días:\n"
         for fila in resultados:
@@ -179,21 +179,14 @@ def consultar_materia_prima_por_vencer(mensaje_usuario=None, dias_default=30):
     except Exception as e:
         return f"⚠️ Error al consultar productos por vencer: {e}"
 
-# Registro de fecha de vencimiento
-
-import re
-from datetime import datetime
-
 def registrar_fecha_vencimiento_desde_mensaje(mensaje):
     try:
         mensaje = mensaje.lower().strip()
 
-        # Patrón actualizado para capturar frases como "registra que el croissant de almendras se vence el 31-07-2025"
         patron = r"registrar(?:\s+que)?\s+(?:el\s+)?([\w\sáéíóúñ]+?)\s+se\s+vence\s+el\s+(\d{1,2}[/-]\d{1,2}[/-]\d{2,4})"
         match = re.search(patron, mensaje)
 
         if not match:
-            # Intentamos patrón alternativo más simple (sin 'se' ni 'el')
             patron_alt = r"registrar\s+([\w\sáéíóúñ]+?)\s+vence\s+(\d{1,2}[/-]\d{1,2}[/-]\d{2,4})"
             match = re.search(patron_alt, mensaje)
             if not match:
