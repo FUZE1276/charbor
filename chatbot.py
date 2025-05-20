@@ -7,9 +7,10 @@ import re
 import os
 from datetime import datetime
 from nltk.stem import WordNetLemmatizer
-from keras.models import load_model
+from tensorflow.keras.models import load_model
 from conexion import cursor, conn
 from rapidfuzz import process, fuzz
+
 
 # Descargar 'punkt' solo si no está disponible
 try:
