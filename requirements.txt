@@ -3,4 +3,5 @@ nltk
 numpy
 rapidfuzz
 psycopg2-binary
-tensorflow==2.12.0
+tensorflow-cpu
+rapidfuzz
