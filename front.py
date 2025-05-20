@@ -1,5 +1,8 @@
 import streamlit as st
 from chatbot import predict_class, get_response, intents  
+import os
+
+port = int(os.environ.get("PORT", 8501))
 
 st.set_page_config(page_title="Asistente de Base de Datos", page_icon="🧠")
 
