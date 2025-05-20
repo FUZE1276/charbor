@@ -2,6 +2,7 @@ import streamlit as st
 from chatbot import predict_class, get_response, intents  
 import os
 
+# Obtener puerto desde variable de entorno (por si quieres mostrar o usar en otro lado)
 port = int(os.environ.get("PORT", 8501))
 
 st.set_page_config(page_title="Asistente de Base de Datos", page_icon="🧠")
@@ -48,3 +49,6 @@ if prompt := st.chat_input("¿Cómo puedo ayudarte?"):
     with st.chat_message("assistant"):
         st.markdown(response)
     st.session_state.messages.append({"role": "assistant", "content": response})
+
+# Opción: mostrar el puerto (solo para debugging)
+st.write(f"Puerto usado por Render: {port}")

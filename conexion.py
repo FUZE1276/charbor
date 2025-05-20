@@ -1,12 +1,13 @@
 import psycopg2
+import os
 
 try:
     conn = psycopg2.connect(
-        host='bvwfyr03z7nd6awox7a5-postgresql.services.clever-cloud.com',
-        user='us0nxqdxueurk6pgmiyr',
-        password='n1vF2qL2ZZI95yT9ipcv3atZuwOYwy',
-        database='bvwfyr03z7nd6awox7a5',
-        port='50013'
+        host=os.environ['DB_HOST'],
+        user=os.environ['DB_USER'],
+        password=os.environ['DB_PASSWORD'],
+        database=os.environ['DB_NAME'],
+        port=os.environ.get('DB_PORT', '5432')  # 5432 por defecto si no está
     )
     cursor = conn.cursor()
     print("✅ Conexión a PostgreSQL remota establecida correctamente.")
