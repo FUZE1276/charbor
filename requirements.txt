@@ -3,6 +3,6 @@ nltk
 numpy
 rapidfuzz
 psycopg2-binary
-tensorflow
+tensorflow==2.12.0
 keras
 
