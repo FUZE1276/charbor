@@ -3,5 +3,5 @@ nltk
 numpy
 rapidfuzz
 psycopg2-binary
-tensorflow-cpu
 rapidfuzz
+tensorflow
